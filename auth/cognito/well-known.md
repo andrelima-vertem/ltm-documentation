@@ -1,6 +1,6 @@
 [Início](/readme.md) &raquo; Autenticação &raquo; [Nova Integração de Autenticação](/auth/cognito/readme.md) &raquo; Discovery Endpoint
 
-# Discovery Endpoint
+# OIDC Discovery Endpoint
 
 O Identity Server LTM expõe documentos de descoberta do OIDC (https://auth.ltm-tenant.webpremios.digital/.well-known/openid-configuration). Estes podem ser usados para configurar aplicativos automaticamente.
 
@@ -10,25 +10,25 @@ Através de nosso well-known é possível a aplicação cliente estar em conform
 
 Entre os objetivos estão, evitar que alterações de qualquer natureza possam afetar as aplicações clientes e tornar qualquer integração sustentável e com o mínimo possível de alterações.
 
-## Exemplo de nossa api com os metadados de uma integração:
+### Exemplo de nossa api com os metadados de uma integração:
 
 ### Request
 
-    curl -X GET \ https://auth.tenant-host.webpremios.digital/.well-known/openid-configuration \ -H 'Postman-Token: 5e92dd6f-97d5-4686-821c-e1959fa64b6a' \
+    curl -X GET \ https://auth.tenant-demo.webpremios.digital/.well-known/openid-configuration \ -H 'Postman-Token: 5e92dd6f-97d5-4686-821c-e1959fa64b6a' \
     -H 'cache-control: no-cache’
 
 ### Response
 
     {
 
-        "authorization_endpoint": "https://auth.tenant-host.webpremios.digital/oauth2/authorize",
+        "authorization_endpoint": "https://auth.tenant-demo.webpremios.digital/oauth2/authorize",
         "id_token_signing_alg_values_supported": [
         "RS256"
         ],
         "issuer": "https://cognito-idp.us-east-1.amazonaws.com/us-
-        east-1_90EZdNQiH",
+        east-1_999ZdNQiH",
         "jwks_uri": "https://cognito-idp.us-east-1.amazonaws.com/us-
-        east-1_90EZdNQiH/.well-known/jwks.json",
+        east-1_999ZdNQiH/.well-known/jwks.json",
         "response_types_supported": [
         ],
         "code",
@@ -43,11 +43,37 @@ Entre os objetivos estão, evitar que alterações de qualquer natureza possam a
         "subject_types_supported": [
         "public"
         ],
-        "token_endpoint": "https://auth.tenant-host.webpremios.digital/oauth2/token",
+        "token_endpoint": "https://auth.tenant-demo.webpremios.digital/oauth2/token",
         "token_endpoint_auth_methods_supported": [
         ],
         "client_secret_basic",
         "client_secret_post"
-        "userinfo_endpoint": "https://auth.tenant-host.webpremios.digital/oauth2/userInfo"
+        "userinfo_endpoint": "https://auth.tenant-demo.webpremios.digital/oauth2/userInfo"
 
     }
+
+## Authorization Endpoint
+
+Para obter informações acesse a documentação da Amazon:
+
+https://docs.aws.amazon.com/cognito/latest/developerguide/authorization-endpoint.html
+
+## Token Endpoint
+
+Para obter informações acesse a documentação da Amazon:
+
+https://docs.aws.amazon.com/cognito/latest/developerguide/token-endpoint.html
+
+## UserInfo Endpoint
+
+Para obter informações acesse a documentação da Amazon:
+
+https://docs.aws.amazon.com/cognito/latest/developerguide/userinfo-endpoint.html
+
+## Logout Endpoint
+
+Para obter informações acesse a documentação da Amazon:
+
+https://docs.aws.amazon.com/cognito/latest/developerguide/logout-endpoint.html
+
+## ISSUER e

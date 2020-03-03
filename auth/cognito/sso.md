@@ -18,12 +18,6 @@ Para cenário de federação, o Identity Provider de destino deverá ser integra
 
 Os usuários devem ser redirecionados para a página de login e redirecionados para o seu aplicativo assim que a autenticação for concluída.
 
-### Links úteis:
-
-https://tools.ietf.org/html/rfc6749
-
-https://oauth.net/2/
-
 ## OpenId Connect
 
 O OpenID Connect **(OIDC)** é um protocolo de autenticação, baseado na família de especificações **OAuth 2.0.**
