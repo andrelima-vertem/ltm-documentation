@@ -107,7 +107,10 @@ Em cenários que não há token de usuário, esses dados devem ser recuperados p
 
 > Obs. Segmentos podem variar dependendo do ambiente (ex. UAT, Production), portanto deve-se evitar utilizá-los como dado fixo.
 
-### Login para testes
+### **Login para testes**
+
+No período de desenvolvimento, é fornecido credenciais de participantes-teste para simulações.
+Essa informação contempla aplicações cliente que utilizarem o fluxo de Single Sign On / Authorization Code.
 
 ## Discovery Endpoint
 
@@ -123,4 +126,6 @@ Em cenários que não há token de usuário, esses dados devem ser recuperados p
 
 ## Vendor
 
-<div style="text-align: right">[&raquo; Próximo]()</div>
+### Próximos passos
+
+[Nova Integração de Autenticação (Single Sign On)](/auth/cognito/readme.md)
