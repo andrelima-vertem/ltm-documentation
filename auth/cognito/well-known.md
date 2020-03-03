@@ -1,3 +1,53 @@
 [Início](/readme.md) &raquo; Autenticação &raquo; [Nova Integração de Autenticação](/auth/cognito/readme.md) &raquo; Discovery Endpoint
 
 # Discovery Endpoint
+
+O Identity Server LTM expõe documentos de descoberta do OIDC (https://auth.ltm-tenant.webpremios.digital/.well-known/openid-configuration). Estes podem ser usados para configurar aplicativos automaticamente.
+
+> OBS: O discovery endpoint é fornecido pela LTM Fidelidade, conforme descrito em: [Primeiros passos com o **CloudLoyalty.**](/starting.md)
+
+Através de nosso well-known é possível a aplicação cliente estar em conformidade com qualquer tipo de mudança que o CloudLoyalty Identity Server possa sofrer.
+
+Entre os objetivos estão, evitar que alterações de qualquer natureza possam afetar as aplicações clientes e tornar qualquer integração sustentável e com o mínimo possível de alterações.
+
+## Exemplo de nossa api com os metadados de uma integração:
+
+### Request
+
+    curl -X GET \ https://auth.tenant-host.webpremios.digital/.well-known/openid-configuration \ -H 'Postman-Token: 5e92dd6f-97d5-4686-821c-e1959fa64b6a' \
+    -H 'cache-control: no-cache’
+
+### Response
+
+    {
+
+        "authorization_endpoint": "https://auth.tenant-host.webpremios.digital/oauth2/authorize",
+        "id_token_signing_alg_values_supported": [
+        "RS256"
+        ],
+        "issuer": "https://cognito-idp.us-east-1.amazonaws.com/us-
+        east-1_90EZdNQiH",
+        "jwks_uri": "https://cognito-idp.us-east-1.amazonaws.com/us-
+        east-1_90EZdNQiH/.well-known/jwks.json",
+        "response_types_supported": [
+        ],
+        "code",
+        "token",
+        "token id_token"
+        "scopes_supported": [
+        "openid",
+        "email",
+        "phone",
+        "profile"
+        ],
+        "subject_types_supported": [
+        "public"
+        ],
+        "token_endpoint": "https://auth.tenant-host.webpremios.digital/oauth2/token",
+        "token_endpoint_auth_methods_supported": [
+        ],
+        "client_secret_basic",
+        "client_secret_post"
+        "userinfo_endpoint": "https://auth.tenant-host.webpremios.digital/oauth2/userInfo"
+
+    }
