@@ -16,7 +16,7 @@ Tais perfis deverão encontrar aqui o que precisam para desenvolver uma integra�
 
 - Agências de publicidade
 
-  - Agências de publicidade que queiram implantar em catálogo de prêmios próprio para seus clientes utilizando as apis da **LTM CloudLoyalty**.
+  - Agências de publicidade que queiram implantar um catálogo de prêmios próprio para seus clientes utilizando as apis da **LTM CloudLoyalty**.
 
 - Parceiro de um cliente da Vertem
   - Um parceiro de um cliente geralmente já fornece serviços específicos e necessitam utilizar a conta corrente do cliente para autorizar e confirmar resgates.

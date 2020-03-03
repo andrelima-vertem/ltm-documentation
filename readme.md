@@ -11,7 +11,7 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
 # Sumário
 
 - [Primeiros passos com o **CloudLoyalty**](/starting.md)
-- Autenticação
+- [Autenticação](/auth/cognito/readme.md)
 
   - [Nova Integração de Autenticação (Single Sign On)](/auth/cognito/readme.md)
 
