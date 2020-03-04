@@ -17,9 +17,15 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
 
     - [OpenId Connect / Single Sign On](/auth/cognito/sso.md)
       - [Discovery Endpoint](/auth/cognito/well-known.md)
+        - [Authorization Endpoint](/auth/cognito/well-known.md)
+        - [Token Endpoint](/auth/cognito/well-known.md)
+        - [UserInfo Endpoint](/auth/cognito/well-known.md)
+        - [Logout Endpoint](/auth/cognito/well-known.md)
+        - [Issuer e jwks_uri (JWT)](/auth/cognito/well-known.md)
       - [Authorization Code](/auth/cognito/authorization_code.md)
     - [Client Credentials](/auth/cognito/client_credentials.md)
     - Federação _(em breve...)_
+    - Mobile _(em breve)_
 
   - [Integração Antiga de Autenticação](/auth/legacy/readme.md)
 

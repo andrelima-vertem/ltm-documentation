@@ -20,7 +20,6 @@ Entre os objetivos estão, evitar que alterações de qualquer natureza possam a
 ### Response
 
     {
-
         "authorization_endpoint": "https://auth.tenant-demo.webpremios.digital/oauth2/authorize",
         "id_token_signing_alg_values_supported": [
         "RS256"
@@ -49,7 +48,6 @@ Entre os objetivos estão, evitar que alterações de qualquer natureza possam a
         "client_secret_basic",
         "client_secret_post"
         "userinfo_endpoint": "https://auth.tenant-demo.webpremios.digital/oauth2/userInfo"
-
     }
 
 ## Authorization Endpoint
@@ -66,6 +64,26 @@ https://docs.aws.amazon.com/cognito/latest/developerguide/token-endpoint.html
 
 ## UserInfo Endpoint
 
+As informações contidas no endpoint fornecem informações de segmentação do cliente.
+
+Requisição:
+
+    curl --location --request GET 'https://auth.campaign-demo.webpremios.digital/oauth2/userInfo' \
+    --header 'Authorization: Bearer xxx...'
+
+Exemplo de Resposta:
+
+    {
+        "sub": "7345188d-ae89-47d1-808f-506edaa116e8",
+        "custom:campaign_id": "99999",
+        "custom:catalog_id": "88888",
+        "custom:participant_id": "28891366",
+        "custom:client_id": "30303",
+        "username": "12345678926"
+    }
+
+As informações mostram o tenant, segmento (catalog), id do usuário, id do cliente (cnpj da campanha) e login do usuário.
+
 Para obter informações acesse a documentação da Amazon:
 
 https://docs.aws.amazon.com/cognito/latest/developerguide/userinfo-endpoint.html
@@ -76,4 +94,12 @@ Para obter informações acesse a documentação da Amazon:
 
 https://docs.aws.amazon.com/cognito/latest/developerguide/logout-endpoint.html
 
-## ISSUER e
+## Issuer e jwks_uri (JWT)
+
+Para obter informações acesse a documentação da Amazon:
+
+https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-using-tokens-verifying-a-jwt.html
+
+# Próximos passos
+
+[Authorization Code](/auth/cognito/authorization_code.md)
