@@ -1,6 +1,6 @@
 [Início](/readme.md) &raquo; Autenticação &raquo; Integração Antiga de Autenticação
 
-# Antiga Autenticação
+# Autenticação - Versão 1.0
 
 A autenticação antiga do Cloud Loyalty possui algumas limitações no que diz respeito à integrações com aplicações externas.
 

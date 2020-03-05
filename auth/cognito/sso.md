@@ -1,4 +1,4 @@
-[Início](/readme.md) &raquo; Autenticação &raquo; [Nova Integração de Autenticação](/auth/cognito/readme.md) &raquo; OpenId Connect / SSO
+[Início](/readme.md) &raquo; Autenticação &raquo; [Versão 2.0 - Integração de Autenticação](/auth/cognito/readme.md) &raquo; OpenId Connect / SSO
 
 # Introdução
 
@@ -17,6 +17,8 @@ Isso significa que, para que o SSO funcione, você deve estar usando o **CloudLo
 Para cenário de federação, o Identity Provider de destino deverá ser integrado ao CloudLoyalty Identity Server.
 
 Os usuários devem ser redirecionados para a página de login e redirecionados para o seu aplicativo assim que a autenticação for concluída.
+
+> Importante: **O Fluxo padrão para SSO** definido pela LTM Fidelidade é o **Authorization Code.**
 
 ## OpenId Connect
 

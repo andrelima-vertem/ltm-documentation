@@ -1,6 +1,6 @@
-[Início](/readme.md) &raquo; Autenticação &raquo; Single Sign On
+[Início](/readme.md) &raquo; Autenticação &raquo; Versão 2.0 - Integração de Autenticação &raquo; Single Sign On
 
-# Nova Autenticação
+# Autenticação - Versão 2.0
 
 Com o objetivo de separar melhor as responsabilidades (Separation of Concerns) das aplicações do Cloud Loyalty, em 2019 a LTM Fidelidade investiu esforços em obter uma solução de **Identity Server.**
 
@@ -24,7 +24,7 @@ Os grupos de usuários do Amazon Cognito são provedores de identidade baseados 
 
 Com isso os clientes LTM Fidelidade podem utilizar o Single Sign On para integrar multiplas aplicações ou gerenciar seu próprio servidor de identidade através de federação.
 
-A divisão das responsabilidades agora é melhor pois há bem menos complexidade.
+A divisão das responsabilidades agora é melhor definida pois há bem menos complexidade.
 
 ## Próximos passos
 

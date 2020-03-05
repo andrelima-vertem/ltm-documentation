@@ -1,8 +1,8 @@
-[Início](/readme.md) &raquo; Autenticação &raquo; [Nova Integração de Autenticação](/auth/cognito/readme.md) &raquo; Discovery Endpoint
+[Início](/readme.md) &raquo; Autenticação &raquo; [Versão 2.0 - Integração de Autenticação](/auth/cognito/readme.md) &raquo; Discovery Endpoint
 
 # OIDC Discovery Endpoint
 
-O Identity Server LTM expõe documentos de descoberta do OIDC (https://auth.ltm-tenant.webpremios.digital/.well-known/openid-configuration). Estes podem ser usados para configurar aplicativos automaticamente.
+O CloudLoyalty Identity Server expõe documentos de descoberta do OIDC (https://auth.tenant-demo.webpremios.digital/.well-known/openid-configuration). Estes podem ser usados para configurar aplicativos automaticamente.
 
 > OBS: O discovery endpoint é fornecido pela LTM Fidelidade, conforme descrito em: [Primeiros passos com o **CloudLoyalty.**](/starting.md)
 
