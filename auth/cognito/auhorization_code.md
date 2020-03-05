@@ -75,7 +75,7 @@ O redirecionamento também define um parâmetro de consulta code, que especifica
 
 O **Web App** hospedado na URL de redirecionamento pode extrair o código de autorização dos parâmetros da consulta e trocá-lo por tokens do **CloudLoyalty Authorization Server**.
 
-A troca ocorre enviando uma solicitação POST para o token_endpoint informado no **well-known.**
+A troca ocorre enviando uma solicitação POST para o **token_endpoint** informado no **well-known.**
 
 - Utilizar Base64 do client_id e client_secret:
 
@@ -87,3 +87,28 @@ A troca ocorre enviando uma solicitação POST para o token_endpoint informado n
   - code - o código de autorização gerado ao usuário.
   - redirect_uri - O mesmo da solicitação no passo 2.
   - authorization - BASE64 (CLIENT_ID:CLIENT_SECRET)
+
+Exemplo de request:
+
+    curl -X POST \
+    https://auth.padrao-uat.webpremios.digital/oauth2/token \
+    -H 'Authorization: Basic xxx..' \
+    -H 'Content-Type: application/x-www-form-urlencoded' \
+    -d ‘grant_type=authorization_code&redirect_uri=https%3A%2F%2Flocalhost%2Fcallback&code=code'
+
+- O JSON retornado na resposta resultante possui as seguintes chaves:
+  - **id_token** - Um token válido de ID do pool de usuários. Observe que um token de ID só é fornecido se o escopo openid foi solicitado. (Este token é o que torna possível o SSO)
+  - **access_token** - Um token de acesso do LTM Identity Server válido
+  - **refresh_token** - Um token de atualização do LTM Identity Server válido. - Isso pode ser usado para recuperar novos tokens enviando-os por uma solicitação POST para **token_endpoint**, especificando os parâmetros _refresh_token, client_id e configurando o parâmetro grant_type como “refresh_token“._
+    - O refresh_token por padrão é válido por 30 dias.
+    - Encorajamos todas as aplicações cliente utilizarem o fluxo de **RefreshToken**, isso melhora a experiência do usuário e potencializa resgates.
+  - **expires_in** - O período de tempo (em segundos) pelo qual o ID fornecido e / ou o (s) token (s) de acesso são válidos.
+  - **token_type** - Defina como “Bearer".
+
+#### Armazenando tokens
+
+A LTM Fidelidade sugere uma solução técnica que é o uso do token em cache.
+
+### 6 - Pronto!
+
+Sua aplicação está pronta para consumir recursos do CloudLoyalty.
