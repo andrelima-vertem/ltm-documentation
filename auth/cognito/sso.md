@@ -10,7 +10,7 @@ O objetivo deste documento é descrever resumidamente as responsabilidades do Si
 
 https://en.wikipedia.org/wiki/Single_sign-on
 
-Iniciar uma sessão de **SSO** agora deve acontecer apenas em uma página hospedada pelo Identity Server LTM e não em aplicativos.
+Iniciar uma sessão de **SSO** agora deve acontecer apenas em uma página hospedada pelo **CloudLoyalty Identity Server** e não em aplicativos.
 
 Isso significa que, para que o SSO funcione, você deve estar usando o **CloudLoyalty Identity Server** com login universal.
 
