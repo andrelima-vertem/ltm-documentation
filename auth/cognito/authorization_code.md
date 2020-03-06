@@ -70,7 +70,7 @@ Depois que o **CloudLoyalty Authorization Server** verifica as credenciais do us
 
 O redirecionamento também define um parâmetro de consulta code, que especifica o código de autorização obtido via usuário pelo **CloudLoyalty Authorization Server**.
 
-    Ex: http://localhost/oauth/callback?code=5e9a7474-d191-4b8c-b0b8- e3f7924723be&state=your_state
+    Ex: http://localhost/oauth/callback?code=5e9a7474-d191-4b8c-b0b8-e3f7924723be&state=your_state
 
 ### 5 - Obtendo tokens
 
