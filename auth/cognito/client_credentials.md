@@ -1,3 +1,5 @@
+[Início](/readme.md) &raquo; Autenticação &raquo; [Versão 2.0 - Integração de Autenticação](/auth/cognito/readme.md) &raquo; Client Credentials
+
 # LTM CloudLoyalty - Identity Server
 
 ## Fluxo Client Credentials
@@ -53,7 +55,7 @@ https://docs.aws.amazon.com/cognito/latest/developerguide/token-endpoint.html
 
   - _webpremios.campaigns/{tenant-id}_
   - _webpremios.backoffice/all.read_
-  - _webpremios.backoffice/all.write/_
+  - _webpremios.backoffice/all.write_
 
 Para entender melhor os parametros da request acesse o link: [Primeiros passos com o **CloudLoyalty**](/starting.md)
 
@@ -63,6 +65,6 @@ Para entender melhor os parametros da request acesse o link: [Primeiros passos c
 
 [Single Sign On (SSO)]()
 
-## Próximos passos
+# Próximos passos
 
-[Discovery Endpoint](/auth/cognito/well-known.md)
+[Participante - Fluxo Client Credentials](/participant/client_credentials.md)

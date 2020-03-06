@@ -1,4 +1,5 @@
-[Início](/readme.md) &raquo; Autenticação &raquo; [Versão 2.0 - Integração de Autenticação](/auth/cognito/readme.md) &raquo; Authorization Code
+[Início](/readme.md) &raquo; Autenticação &raquo; [Versão 2.0 - Integração de Autenticação](/auth/cognito/readme.md) &raquo;
+[OpenId Connect / Single Sign On](/auth/cognito/sso.md) &raquo; Authorization Code
 
 # Fluxo Authorization Code
 
@@ -112,3 +113,7 @@ A LTM Fidelidade sugere uma solução técnica que é o uso do token em cache.
 ### 6 - Pronto!
 
 Sua aplicação está pronta para consumir recursos do CloudLoyalty.
+
+# Próximos passos
+
+[Participante - Fluxo Authorization Code (SSO)](/participant/authorization_code.md)
