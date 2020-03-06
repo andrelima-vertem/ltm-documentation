@@ -39,4 +39,4 @@ Para escolher a versão que o integrador deverá utilizar é necessário um pare
 
 ## Próximos passos
 
-[Qual fluxo de autenticação OAUTH2 devo escolher?](/auth/flows.md)
+[OpenId Connect / Single Sign On](/auth/cognito/sso.md)
