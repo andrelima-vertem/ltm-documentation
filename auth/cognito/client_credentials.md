@@ -61,9 +61,9 @@ Para entender melhor os parametros da request acesse o link: [Primeiros passos c
 
 ## **_Links relacionados_**
 
-[Autenticação]()
+[Fluxo Client Credentials para consultar um participante.](/participant/client_credentials.md)
 
-[Single Sign On (SSO)]()
+[User Impersonation para Administradores.](/participant/user_impersonation.md)
 
 # Próximos passos
 

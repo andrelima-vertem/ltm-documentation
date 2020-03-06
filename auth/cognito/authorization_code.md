@@ -116,4 +116,6 @@ Sua aplicação está pronta para consumir recursos do CloudLoyalty.
 
 # Próximos passos
 
+[Client Credentials](/auth/cognito/client_credentials.md)
+
 [Participante - Fluxo Authorization Code (SSO)](/participant/authorization_code.md)

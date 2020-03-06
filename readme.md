@@ -2,6 +2,12 @@
 
 _Esta documentação visa descrever os fluxos necessários para consumo das apis do **LTM CloudLoyalty** por aplicações terceiras._
 
+A documentação apresenta uma ordem lógica, os termos mais técnicos como request, response, etc deverão estar na documentação técnica no **portal do desenvolvedor.**
+
+Porém é necessário um fluxo lógico de acordo com a necessidade do integrador para maior agilidade.
+
+O portal do desenvolvedor apresenta uma lista de chamadas, **aqui apresentamos um mapa lógico disso tudo.**
+
 **LTM CloudLoyalty** é um produto de <a href="https://vertem.com" target="_blank">**LTM Fidelidade.**</a>
 
 **LTM Fidelidade** é uma empresa da holding <a href="https://vertem.com" target="_blank">**Vertem.**</a>
@@ -37,11 +43,12 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
     - Authorization Code _(em breve...)_
     - Password Credentials _(em breve...)_
 
-- Participante
-  - Fluxo Client Credentials
-    - Padrão de chamadas de apis utilizando client_credentias
-  - Fluxo Authorization Code (SSO)
-  - Saldo de pontos
+## Participantes
+
+- [Pesquisar um participante - Fluxo Client Credentials](/participant/client_credentials.md)
+  - [User Impersonation para Administradores](/participant/user_impersonation.md)
+- [Pesquisar um participante - Fluxo Authorization Code (SSO)](/participant/authorization_code.md)
+- [Saldo de pontos de um participante](/participant/balance.md)
 
 ## Compras / Resgates
 
