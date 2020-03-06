@@ -72,7 +72,8 @@ Exemplo de uma request com subscription:
 > --header 'Ocp-Apim-Subscription-Key: your-key-here' \
 > --header 'Authorization: Bearer XXX'
 
-No painel do desenvolvedor é feita a gestão da subscrição do cliente.
+No painel do desenvolvedor é feita a gestão da subscrição do cliente. Para acessar, escolha a opção "Profile" em seu menu de usuário.
+
 Ilustração:
 
 > ![CLient Credentials Flow](/images/sub-key.png)
