@@ -2,7 +2,7 @@
 
 # Autenticação - Versão 2.0
 
-Com o objetivo de separar melhor as responsabilidades (Separation of Concerns) das aplicações do Cloud Loyalty, em 2019 a LTM Fidelidade investiu esforços em obter uma solução de **Identity Server.**
+Com o objetivo de separar melhor as responsabilidades (Separation of Concerns) das aplicações do CloudLoyalty, em 2019 a LTM Fidelidade investiu esforços em obter uma solução de **Identity Server.**
 
 Esse Identity Server é uma solução **Amazon Cognito.**
 
@@ -22,7 +22,7 @@ Os grupos de usuários do Amazon Cognito são provedores de identidade baseados 
 
 ### Estratégia
 
-Com isso os clientes LTM Fidelidade podem utilizar o Single Sign On para integrar multiplas aplicações ou gerenciar seu próprio servidor de identidade através de federação.
+Os clientes LTM Fidelidade podem utilizar o Single Sign On para integrar multiplas aplicações ou gerenciar seu próprio servidor de identidade através de federação.
 
 A divisão das responsabilidades agora é melhor definida pois há bem menos complexidade.
 
