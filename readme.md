@@ -13,6 +13,9 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
 - [Primeiros passos com o **CloudLoyalty**](/starting.md)
 - [Autenticação](/auth/cognito/readme.md)
 
+  - [Qual versão de integração devo escolher?](/auth/new-or-legacy.md)
+  - [Qual fluxo de autenticação OAUTH2 devo escolher?](/auth/flows.md)
+
   - [Versão 2.0 - Integração de Autenticação](/auth/cognito/readme.md)
 
     - [OpenId Connect / Single Sign On](/auth/cognito/sso.md)
@@ -33,9 +36,6 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
     - Client Credentials _(em breve...)_
     - Authorization Code _(em breve...)_
     - Password Credentials _(em breve...)_
-
-  - [Qual versão de integração devo escolher?](/auth/new-or-legacy.md)
-  - [Qual fluxo de autenticação OAUTH2 devo escolher?](/auth/flows.md)
 
 - Participante
   - Fluxo Client Credentials
