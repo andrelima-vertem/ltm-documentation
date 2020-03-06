@@ -27,7 +27,7 @@ Para fluxo que não tenha participação direta, ou seja, o participante não é
 
 Para aplicações 100% frontend, que não possuem um recurso de backend sob a gestão do integrador, o fluxo possível é o **Implicit.**
 
-O **Authorization Code** não poderá ser utilizado nesse caso, pois o uso da chave secreta do client "client_secret" faz parto do fluxo. É uma brecha de segurança expor essa informação.
+O **Authorization Code** não poderá ser utilizado nesse caso, pois o uso da chave secreta do client "client_secret" faz parte do fluxo. É uma brecha de segurança expor essa informação.
 
 ### Requisitos para o uso do Implicit Grant
 
