@@ -17,7 +17,7 @@ Porém há requisitos importantes para utilizar o fluxo de **Authorization Code*
 
 ## Client Credentials
 
-Para fluxo que não tenha participação direta, ou seja, o participante não é responsável pelo login mesmo que ações serão tomadas em nome dele, o fluxo deverá ser o **client_credentials.**
+Para fluxo que não tenha participação direta do participante, ou seja, o participante não é responsável pelo login mesmo que ações serão tomadas em nome dele, o fluxo deverá ser o **client_credentials.**
 
 É um fluxo comumente **utilizado para fins de aplicações backoffice.**
 
