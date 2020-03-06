@@ -2,7 +2,7 @@
 
 # Introdução
 
-O objetivo deste documento é descrever resumidamente as responsabilidades do Single Sign On, OpenId Connect, e OAUTH2 dentro do ecosistema CloudLoyalty
+O objetivo deste documento é descrever resumidamente as responsabilidades do Single Sign On, OpenId Connect e OAUTH2 dentro do ecosistema CloudLoyalty
 
 ![Cognito / OpenId Connect](/images/sso-amazon.png)
 
