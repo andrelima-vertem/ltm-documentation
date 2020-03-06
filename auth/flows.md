@@ -27,17 +27,15 @@ Porém, é incorreto fazer a escolha por questões de simplicidade.
 Apesar de simples, é um fluxo arbitrário no que diz respeito à resgate de pontos de qualquer modalidade.
 Portanto são necessários:
 
-- Uma justificativa de negócios pela parte integradora
-- Um consentimento do **dono da campanha (cliente)**
-- Um aval técnico do time de **Segurança da informação**
+- Uma justificativa de negócios pela parte integradora.
+- Um consentimento do **dono da campanha (cliente).**
+- Um aval técnico do time de **Segurança da informação.**
 
 ### Requisitos para o uso do Client Credentials
 
-- Escopos específicos de backoffice, por se tratar (por padrão) de um fluxo específico para essa finalidade
-- Backend APP
-- Uma justificativa de negócios pela parte integradora
-- Um consentimento do **dono da campanha (cliente)**
-- Um aval técnico do time de **Segurança da informação**
+- Escopos específicos de backoffice, por se tratar (por padrão) de um fluxo específico para essa finalidade.
+- Backend APP.
+- Tramites burocráticos citados acima.
 
 ## Implicit Grant
 
