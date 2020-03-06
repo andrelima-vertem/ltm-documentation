@@ -2,20 +2,20 @@
 
 # Obtendo o saldo do participante
 
-O token obitido por esse fluxo possui um perfil de um participante.
-Possui o segmento do cliente, a origem do user pool (tenant id) e o id do cliente (dono da campanha).
-
-Com ele é possível gerenciar recursos de apenas um participante.
-
-Basicamente é o fluxo que em geral o próprio participante var tomar as ações. Geralmente em uma aplicação cliente que consome as apis do CloudLoyalty.
+O busca por saldo é relevante para situações que uma aplicação precise informar o participante ou antever uma possibilidade de resgate.
 
 Link da documentação no portal do desenvolvedor
 
-> https://cloudloyaltyuat1.portal.azure-api.net/docs/services/cloud-loyalty-marketplace-api/operations/ParticipantCloudLoyalty_Get?
+> https://cloudloyaltyuat1.portal.azure-api.net/docs/services/cloud-loyalty-marketplace-api/operations/ParticipantCloudLoyalty_GetSimpleBalance?
 
-Para obter os dados do segmento do usuário, bem como o tenant id e login, acesse a documentação do openId Connect:
-[UserInfo Endpoint](/auth/cognito/well-known.md).
+## Fluxo Client Credentials
+
+O token obtido **não possui** os escopos necessários para consumo de saldo do participante.
+
+Para tal torna-se necessário o fluxo de [**impersonalização (User Impersonation).**](/participant/user_impersonation.md)
+
+Acesse a documentação: [User Impersonation para Administradores.](/participant/user_impersonation.md)
 
 ## Próximos passos
 
-[Saldo de pontos.](/participant/balance.md)
+[Compras - Qual o modelo de resgates devo adotar?](/purchase/readme.md)
