@@ -48,7 +48,11 @@ Parâmetros obrigatórios enviados no cabaçalho das requisições, utilizando a
 - **impersonatorUser:** Como uma compra pode ser impersonada é obrigatório o preenchimento dessa informação. Pode ser o codigo de um agente de backoffice ou a identificação do ClientApp.
 - **username:** login do participante, obrigatório em fluxos de compras, saldo, extrato e pontos a expirar.
 
-## Exemplos de um fluxo de Impersonalização
+## Fluxo de impersonalização
+
+![Impersonation Flow](/images/impersonator-diagram.svg)
+
+## Exemplo de um fluxo de Impersonalização
 
 Consulta de saldo de um participante:
 
@@ -60,7 +64,3 @@ Consulta de saldo de um participante:
     --header 'impersonatorUser: AgentID=9999' \
     --header 'username: integration.test'
     --authorization 'Bearer xxx...' \
-
-## Fluxo de impersonalização
-
-![Impersonation Flow](/images/impersonator-diagram.svg)
