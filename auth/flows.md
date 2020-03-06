@@ -19,9 +19,25 @@ Porém há requisitos importantes para utilizar o fluxo de **Authorization Code*
 
 Para fluxo que não tenha participação direta, ou seja, o participante não é responsável pelo login mesmo que ações serão tomadas em nome dele, o fluxo deverá ser o **client_credentials.**
 
+É um fluxo comumente **utilizado para fins de aplicações backoffice.**
+
+O Fluxo de client_credentials é geralmente o mais desejado por ser de muito mais fácil integração.
+Porém, é incorreto fazer a escolha por questões de simplicidade.
+
+Apesar de simples, é um fluxo arbitrário no que diz respeito à resgate de pontos de qualquer modalidade.
+Portanto são necessários:
+
+- Uma justificativa de negócios pela parte integradora
+- Um consentimento do **dono da campanha (cliente)**
+- Um aval técnico do time de **Segurança da informação**
+
 ### Requisitos para o uso do Client Credentials
 
+- Escopos específicos de backoffice, por se tratar (por padrão) de um fluxo específico para essa finalidade
 - Backend APP
+- Uma justificativa de negócios pela parte integradora
+- Um consentimento do **dono da campanha (cliente)**
+- Um aval técnico do time de **Segurança da informação**
 
 ## Implicit Grant
 
@@ -35,8 +51,8 @@ O **Authorization Code** não poderá ser utilizado nesse caso, pois o uso da ch
 
 ## Conclusão
 
-Para escolher a versão que o integrador deverá utilizar é necessário um parecer do time técnico da LTM Fidelidade.
+Para escolher o fluxo correto de integração é preciso .
 
 ## Próximos passos
 
-[OpenId Connect / Single Sign On](/auth/cognito/sso.md)
+[Versão 2.0 - Integração de Autenticação](/auth/cognito/readme.md)
