@@ -21,7 +21,7 @@ Para fluxo que não tenha participação direta do participante, ou seja, o part
 
 É um fluxo comumente **utilizado para fins de aplicações backoffice.**
 
-O Fluxo de client_credentials é geralmente o mais desejado por ser de muito mais fácil integração.
+O Fluxo **client_credentials** é geralmente o mais desejado por ser de muito mais fácil integração.
 Porém, é incorreto fazer a escolha por questões de simplicidade.
 
 Apesar de simples, é um fluxo arbitrário no que diz respeito à resgate de pontos de qualquer modalidade.
