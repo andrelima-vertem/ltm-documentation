@@ -2,7 +2,7 @@
 
 _Esta documentação visa descrever os fluxos necessários para consumo das apis do **LTM CloudLoyalty** por aplicações terceiras._
 
-A documentação apresenta uma ordem lógica, os termos mais técnicos como request, response, etc deverão estar na documentação técnica no **portal do desenvolvedor.**
+A documentação apresenta uma ordem lógica, os termos mais técnicos como request, response, etc deverão estar na documentação técnica no [**portal do desenvolvedor.**](https://portal.ltm.digital/)
 
 Porém é necessário um fluxo lógico de acordo com a necessidade do integrador para maior agilidade.
 
