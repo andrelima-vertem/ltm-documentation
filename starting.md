@@ -123,7 +123,7 @@ Em cenários que não há token de usuário, esses dados devem ser recuperados p
 ### Login para testes
 
 No período de desenvolvimento, é fornecido credenciais de participantes-teste para simulações.
-Essa informação contempla aplicações cliente que utilizarem o fluxo de Single Sign On / Authorization Code.
+Essa informação contempla aplicações cliente que utilizarem o fluxo de Single Sign On / Authorization Code, Client Credentials e Implicit.
 
 ### Discovery Endpoint
 
