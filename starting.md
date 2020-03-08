@@ -62,7 +62,7 @@ Lá também você faz a gestão de sua **subscription key.**
 
 ### Subscription-key
 
-A subscription-key é uma credencial alpha-numérica, não segura, obrigatória para permitir o acesso de sua aplicação às apis do marketplace.
+A subscription-key é uma credencial alpha-numérica, não segura, obrigatória para permitir o acesso de sua aplicação às apis do CloudLoyalty.
 
 Essa informação deverá ser enviada no cabeçalho da requisição (header), no parâmetro "Ocp-Apim-Subscription-Key"
 
