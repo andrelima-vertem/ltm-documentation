@@ -11,7 +11,7 @@ Nosso objetivo aqui é guiá-lo assertivamente para agregar o máximo de valor a
 
 ### Perfis:
 
-Os perfis de empresas ou times que usufruem dessa documentação são alguns, abaixo os perfis mais comuns de times que utilizam essa documentação.
+Os perfis de empresas ou times que usufruem dessa documentação são alguns, abaixo apresentamos os mais comuns.
 Tais perfis deverão encontrar aqui o que precisam para desenvolver uma integração técnica.
 
 - Agências de publicidade
