@@ -120,10 +120,12 @@ Em cenários que não há token de usuário, esses dados devem ser recuperados p
 
 > Obs. Segmentos podem variar dependendo do ambiente (ex. UAT, Production), portanto deve-se evitar utilizá-los como dado fixo.
 
-### Login para testes
+### Login e senha para testes
 
 No período de desenvolvimento, é fornecido credenciais de participantes-teste para simulações.
-Essa informação contempla aplicações cliente que utilizarem o fluxo de Single Sign On / Authorization Code, Client Credentials e Implicit.
+Essa informação contempla aplicações cliente que utilizarem o fluxo de Single Sign On / Authorization Code, Password Credentials e Implicit.
+
+Para fluxos Client Credentials será disponibilizado o CPF de um participante-test.
 
 ### Discovery Endpoint
 
