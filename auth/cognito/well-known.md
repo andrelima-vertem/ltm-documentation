@@ -1,4 +1,4 @@
-[Início](/readme.md) &raquo; Autenticação &raquo; [Versão 2.0 - Integração de Autenticação](/auth/cognito/readme.md) &raquo; Discovery Endpoint
+[Início](/readme.md) &raquo; Autenticação &raquo; [Versão 2.0 - Integração de Autenticação](/auth/cognito/readme.md) &raquo; Single Sign On &raquo; Discovery Endpoint
 
 # OIDC Discovery Endpoint
 

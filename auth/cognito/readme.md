@@ -1,4 +1,4 @@
-[Início](/readme.md) &raquo; Autenticação &raquo; Versão 2.0 - Integração de Autenticação &raquo; Single Sign On
+[Início](/readme.md) &raquo; Autenticação &raquo; Versão 2.0 - Integração de Autenticação
 
 # Autenticação - Versão 2.0
 
