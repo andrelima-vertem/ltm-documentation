@@ -5,7 +5,6 @@ _Esta documentação visa descrever os fluxos necessários para consumo das apis
 A documentação apresenta uma ordem lógica, os termos mais técnicos como request, response, etc deverão estar na documentação técnica no [**portal do desenvolvedor.**](https://portal.ltm.digital/)
 
 Porém é necessário um fluxo lógico de acordo com a necessidade do integrador para maior agilidade.
-
 O portal do desenvolvedor apresenta uma lista de chamadas, **aqui apresentamos um mapa lógico disso tudo.**
 
 **LTM CloudLoyalty** é um produto de <a href="https://vertem.com" target="_blank">**LTM Fidelidade.**</a>
