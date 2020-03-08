@@ -76,11 +76,11 @@ No painel do desenvolvedor é feita a gestão da subscrição do cliente. Para a
 
 Ilustração:
 
-> ![CLient Credentials Flow](/images/sub-key.png)
+> ![API-man key](/images/sub-key.png)
 
 <br />
 
-## Primeiros passos, informações que deverão ser fornecidas por LTM Fidelidade:
+## Primeiros passos, informações que deverão ser fornecidas pela LTM Fidelidade:
 
 # User Acceptance Test Environment (UAT)
 
