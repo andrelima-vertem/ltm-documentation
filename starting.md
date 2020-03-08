@@ -23,7 +23,7 @@ Tais perfis deverão encontrar aqui o que precisam para desenvolver uma integra�
 - Times internos da Vertem
   - Times internos (B2B2C) que precisem integrar plataformas administrativas, hotsites ou consumir informações em uma aplicação back-end.
 - Parceiro estratégico da Vertem
-  - É um parceiro que estratégicamente deve estar presente em catálogo(s) de **um ou mais** clientes da Vertem.
+  - É um parceiro que estrategicamente deve estar presente em catálogo(s) de **um ou mais** clientes da Vertem.
   - Suas aplicações possuem uma integração **multitenant** mais robusta e são capazes de atender qualquer nicho de negócio de loyalty (fidelidade).
 - Outros departamentos de um cliente da Vertem
   - Outros departamentos/empresas que necessitem desenvolver uma integração em um produto interno do cliente, seja o responsável pelo catálogo de prêmios ou representem um subproduto.
