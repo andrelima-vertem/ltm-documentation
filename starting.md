@@ -5,7 +5,7 @@
 ### **O que preciso para iniciar minha integração?**
 
 Para começar sua integração é importante conhecer não só a mecânica de um programa de fidelidade / premiação da <a href="https://vertem.com" target="_blank">**LTM Fidelidade**</a>, mas também como seu produto ou serviço deve ser integrado ao nosso negócio (**LTM CloudLoyalty**).
-Nosso objetivo aqui é guiá-lo assertivamente para agregar o máximo ao seu trabalho, sua empresa e principalmente na melhor experiência para seus clientes.
+Nosso objetivo aqui é guiá-lo assertivamente para agregar o máximo de valor ao seu trabalho, de sua empresa e principalmente na melhor experiência para seus clientes.
 
 **LTM Fidelidade** é uma empresa da holding <a href="https://vertem.com" target="_blank">**Vertem.**</a>
 
