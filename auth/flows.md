@@ -45,11 +45,11 @@ O **Authorization Code** não poderá ser utilizado nesse caso, pois o uso da ch
 
 ### Requisitos para o uso do Implicit Grant
 
-- Frontend Web APP / Mobile App
+- Frontend Web APP / Mobile App.
 
 ## Conclusão
 
-Para escolher o fluxo correto de integração é preciso .
+Para escolher o fluxo correto de integração é necessário entender o papel do participante e da aplicação cliente.
 
 ## Próximos passos
 

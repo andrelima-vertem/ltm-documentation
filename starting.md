@@ -167,6 +167,10 @@ Informação útil apenas para integrações de parceiros que possuem compras ex
 
 Código do parceiro para efetivação de compras externas.
 
+Para saber mais acesse:
+
+[Qual o modelo de resgates devo adotar?](/purchase/auth.md)
+
 # Parceiros de Serviços
 
 Parceiros estratégicos da **Vertem** que pretendem atuar em diversas campanhas dos clientes possuirão mais de 1(um) tenant de integração.

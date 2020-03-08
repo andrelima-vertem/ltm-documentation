@@ -8,9 +8,9 @@ A versão correta é a mesma em que campanha a ser integrada está configurada.
 
 Não é difícil efetuar a migração para a nova versão.
 
-Apesar de a nova versão ser a indicada, se a campanha estiver configurada para a versão antiga, não será possível utilizar a versão 2.0
+Apesar de a nova versão ser a indicada, se a campanha estiver configurada para a versão antiga, não será possível utilizar a versão 2.0.
 
-Novas campanhas, à partir de 2020 já nascem configuradas para a versão 2.0
+Novas campanhas, à partir de 2020 já nascem configuradas para a versão 2.0.
 
 ## Conclusão
 
