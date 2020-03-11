@@ -24,4 +24,4 @@ Para entender melhor o portfólio de parceiros acesse:
 
 ## Próximos passos
 
-[Compras - Tipos de autenticação](/purchase/auth.md)
+[Authorização de compra](/purchase/authorize.md)

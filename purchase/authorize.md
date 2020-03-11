@@ -224,11 +224,13 @@ Informações de pagamento que devem condizer com a soma dos itens enviados no n
 
 #### Tipos de pagamentos (Points, ExternalCreditCard, CreditCard)
 
-Points = Valor informado de pontos a debitar do particiapnte.
+- Points = Valor informado de pontos a debitar do particiapnte.
 
-CreditCard = Cartão de crédito. Por padrão **essa opção é inativa** e deve ser negociado com a LTM a utilização de débito em cartões de crédito.
+- CreditCard = Cartão de crédito. Por padrão **essa opção é inativa** e deve ser negociado com a LTM a utilização de débito em cartões de crédito.
 
-ExternalCreditCard = cartão e crédito externo, ou seja, o participante efetuou a compra em cartão de crédito mas o **parceiro foi responsável pelo processamento do pagamento no gateway de sua escolha.** Deve-se informar o valor nesse campo para manter a consistência da ordem nos storages.
+- ExternalCreditCard = cartão e crédito externo, ou seja, o participante efetuou a compra em cartão de crédito mas o **parceiro foi responsável pelo processamento do pagamento no gateway de sua escolha.** Deve-se informar o valor nesse campo para manter a consistência da ordem nos storages.
+
+#### Tipos de pagamentos (Points, ExternalCreditCard, CreditCard)
 
 ## Próximos passos
 
