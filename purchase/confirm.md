@@ -2,6 +2,10 @@
 
 # Confirmação de compra
 
+Link da documentação técnica no portal do desenvolvedor
+
+> https://cloudloyaltyuat1.portal.azure-api.net/docs/services/cloud-loyalty-marketplace-api/operations/OrderCloudLoyalty_Confirm?
+
 ## Próximos passos
 
-[Compras Internas](/purchase/cancel.md)
+[Cancelamento de compra](/purchase/cancel.md)
