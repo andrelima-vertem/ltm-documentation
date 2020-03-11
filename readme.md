@@ -67,7 +67,7 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
   - Criando uma compra
 
 - [Compras Externas](/purchase/external.md)
-  - Authorização de compra
+  - [Authorização de compra](/purchase/authorize.md)
     - Antifraude _(em breve...)_
   - Confirmação de compra
   - Cancelamento de compra
