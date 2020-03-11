@@ -14,7 +14,7 @@ O participante escolhe que produto ou serviço que vai resgatar, um **débito é
 
 ## Vendor (fornecedor ou parceiro)
 
-Empresas parceiras que ofereçam tal produto ou serviço é donominado: **parceiro (vendor)**.
+Empresas parceiras que ofereçam produtos ou serviços como descritos acima, são donominadas: **parceiros (vendors)**.
 
 **O CloudLoyalty** possui integrações com centenas de parceiros em diversos ramos de atividade como: varejo, promocional, entretenimento, moda, alimentação, viagens, pagamento de contas, recarga de celular, milhas, etc.
 
