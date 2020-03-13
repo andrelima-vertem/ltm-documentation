@@ -216,7 +216,7 @@ Para saber como obter esse dado, leia: [Primeiros passos com o **CloudLoyalty.**
 
 #### ConversionFactor
 
-Valor padrão: "0", caso esse dado mude a LTM informará o parceiro / cliente.
+Valor da taxa de conversão, a LTM deverá informar o valor deste dado ao parceiro / cliente.
 
 ### Payment
 
