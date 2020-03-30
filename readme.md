@@ -74,5 +74,10 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
   - Consultar pedidos
 
 ## Estorno de pedidos
-
+- Introdução
+- Extorno total
+- Extorno parcial 
+  - Extorno parcial por quantidade
+  - Extorno parcial por valor
+  
 ## Monitoria
