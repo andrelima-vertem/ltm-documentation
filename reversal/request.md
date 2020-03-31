@@ -86,8 +86,8 @@ Abaixo descrevo os campos do payload:
     - 49	Arrependimento - Liberação Cliente
     - 50	Pontuação expirada - Liberação cliente
 - refundType: identificador do tipo do estorno que pode assumir os valores abaixo:
-    - 1 - Quantidade : este iten sinaliza que o estorno será realizado pelos campos de quantidade (orderItem.refundQuantity)
-	- 2 - Valor : este iten sinaliza que o estorno será realizado pelos campos de valor (orderItem.refundValue e currentRefundValue)
+    - 1 - Quantidade : este item sinaliza que o estorno será realizado pelos campos de quantidade (orderItem.refundQuantity)
+	- 2 - Valor : este item sinaliza que o estorno será realizado pelos campos de valor (orderItem.refundValue e currentRefundValue)
 - orderItems: lista de itens do pedido a serem estornados
     - orderItemId: Identificador do item de pedido
     - refundValue: valor a ser estornado do item
