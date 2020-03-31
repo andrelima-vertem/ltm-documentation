@@ -22,7 +22,7 @@ Variável da URL:
 - id : Identificador do pedido que foi realizado em um parceiro
 
 Header:
-- Authorization: token de acesso do active directory da azure da LTM
+- Authorization: token de acesso do active directory da azure da LTM (ver no link [Token](/reversal/token.md) para gerar o mesmo)
 - Ocp-Apim-Subscription-Key: subscription de acesso aos endpoints do cloudloyalty
 
 Abaixo descrevo os campos do payload:
