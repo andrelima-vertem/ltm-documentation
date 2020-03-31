@@ -18,7 +18,7 @@ As requests de estorno, são realizadas como visto abaixo:
     }]
 }'</code>
 
-Query string:
+Variável da URL:
 - id : Identificador do pedido que foi realizado em um parceiro
 
 Header:
