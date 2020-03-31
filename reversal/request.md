@@ -91,7 +91,7 @@ Abaixo descrevo os campos do payload:
 - orderItems: lista de itens do pedido a serem estornados
     - orderItemId: Identificador do item de pedido
     - refundValue: valor a ser estornado do item
-    - refundQuantity: quantidade de itens a serem estornados, este campo deverá ser preenchido se a
+    - refundQuantity: quantidade de itens a serem estornados
 
   
 ## Próximos passos
