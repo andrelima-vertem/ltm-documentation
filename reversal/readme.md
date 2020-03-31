@@ -6,6 +6,7 @@ O que é importante salientar é que neste endpoint não estornamos a compra, ma
 
 Existem 4 tipos de estorno : [Estorno total](reversal/total), [Estorno parcial - Valor da order](reversal/order-value), [Estorno parcial - Quantidade de produtos](reverval/product-quantity) e [Estorno parcial - valor de frete](shipping-value)
 
+
 ## Próximos passos
 
-[Extorno Total](/reversal/total.md)
+[Request](/reversal/request.md)
