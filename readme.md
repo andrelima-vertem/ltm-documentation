@@ -74,11 +74,11 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
   - Consultar pedidos
 
 ## Estorno de pedidos
-- [Introdução](reversal/readme) 
-- [Estorno Total](reversal/total)
+- [Introdução](reversal/readme.md) 
+- [Estorno Total](reversal/total.md)
 - Estorno parcial
-  - [Valor da order](reversal/order-value)
-  - [Valor do frete](reversal/shipping-value)
-  - [Quantidade de produtos](reversal/product-quantity)
+  - [Valor da order](reversal/order-value.md)
+  - [Valor do frete](reversal/shipping-value.md)
+  - [Quantidade de produtos](reversal/product-quantity.md)
 
 ## Monitoria
