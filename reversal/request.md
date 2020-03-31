@@ -32,7 +32,7 @@ Abaixo descrevo os campos do payload:
 
 - refundMotiveDescription : descrição aberta do motivo do estorno
 
-- refundShippingValue: valor do frete a ser estornado, lembrando que sempre deverá ser preenchido, quando o intuíto for estornar estevalor, mesmo com a flag de estorno total habilitada
+- refundShippingValue: valor do frete a ser estornado. Lembrando que sempre deverá ser preenchido, quando o intuíto for estornar este valor, mesmo com a flag de estorno total habilitada
 
 - refundMotiveId: Id do motivo de estorno que pode assumir os seguintes valores :
     - 1	Erro no Serviço do Parceiro
