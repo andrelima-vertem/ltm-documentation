@@ -30,7 +30,9 @@ Abaixo descrevo os campos do payload:
 
 - currentRefundValue : valor a ser estornado, caso a flag executeTotalRefund esteja com valor true este campo deverá assumir o valor 0
 
-- currentRefundValue : valor a ser estornado, caso a flag executeTotalRefund esteja com valor true este campo deverá assumir o valor 0
+- refundMotiveDescription : descrição aberta do motivo do estorno
+
+- refundShippingValue: valor do frete a ser estornado, lembrando que sempre deverá ser preenchido, quando o intuíto for estornar estevalor, mesmo com a flag de estorno total habilitada
 
 - refundMotiveId: Id do motivo de estorno que pode assumir os seguintes valores :
     - 1	Erro no Serviço do Parceiro
