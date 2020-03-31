@@ -3,7 +3,7 @@
 Também poderemos estornar o frete, colocando o valor estornado no campo de valor de frete. e sinalizando como estorno parcial.
 	Abaixo um exemplo abaixo:
 
-		curl --location --request POST 'https://api.ltm.digital/order-api/v3/orders/{id}/reversal/external' \
+<code>curl --location --request POST 'https://api.ltm.digital/order-api/v3/orders/{id}/reversal/external' \
 --header 'Authorization: {TOKEN AD}' \
 --header 'Ocp-Apim-Subscription-Key: {Subscription}' \
 --data-raw '{
@@ -18,4 +18,4 @@ Também poderemos estornar o frete, colocando o valor estornado no campo de valo
       "refundValue": 0,
       "refundQuantity": {QUANTIDADE A SER EXTORNADA}
     }]
-}	'
+}'</code>
