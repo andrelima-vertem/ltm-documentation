@@ -4,7 +4,7 @@ O estorno total tem como objetivo estornar totalmente o valor de um determinado 
 O valor de frete deverá ser preenchido, para estornar todos os valores.
 Segue um exemplo abaixo:
 
-curl --location --request POST 'https://api.ltm.digital/order-api/v3/orders/{id}/reversal/external' \
+<code>curl --location --request POST 'https://api.ltm.digital/order-api/v3/orders/{id}/reversal/external' \
 --header 'Authorization: {TOKEN AD}' \
 --header 'Ocp-Apim-Subscription-Key: {Subscription}' \
 --data-raw '{
@@ -15,7 +15,7 @@ curl --location --request POST 'https://api.ltm.digital/order-api/v3/orders/{id}
   "refundMotiveId": {ID DO MOTIVO},
   "refundType": 2,	
   "orderItems": []
-}'
+}'</code>
 
 ## Próximos passos
 
