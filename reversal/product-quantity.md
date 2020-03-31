@@ -5,4 +5,4 @@ O estorno por quantidade, calcula o valor estornado pelo parâmetro de quantidad
 
 ## Próximos passos
 
-[Estorno parcial - Valor de frete](/purchase/shipping-value.md)
+[Estorno parcial - Valor de frete](/reversal/shipping-value.md)
