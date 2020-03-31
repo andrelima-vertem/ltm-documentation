@@ -9,7 +9,7 @@ As requests para geração de token, são realizadas como visto abaixo:
 --data-urlencode 'client_secret=XXXXXXXXXXXXXXX' \
 --data-urlencode 'grant_type=client_credentials'</code>
 
-Os campos do post client_id, scope e client_secret terão que ser pedidos para a equipe de cofiguração responsável, poi por se tratar de informações sensíveis não podemos ceder em domínio aberto.
+Os campos do post client_id, scope e client_secret terão que ser pedidos para a equipe de cofiguração responsável, pois por se tratar de informações sensíveis não podemos ceder em domínio aberto.
   
 ## Próximos passos
 
