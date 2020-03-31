@@ -10,4 +10,4 @@ Existem 4 tipos de estorno hoje implementados : [Estorno total](reversal/total),
 
 ## Próximos passos
 
-[Extorno Total](/purchase/authorize.md)
+[Extorno Total](/reversal/total.md)
