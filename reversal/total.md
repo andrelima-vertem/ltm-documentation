@@ -5,4 +5,4 @@ Segue um exemplo abaixo:
 
 ## Próximos passos
 
-[Estorno parcial - Valor do pedido ](/purchase/order-value.md)
+[Estorno parcial - Valor do pedido ](/reversal/order-value.md)
