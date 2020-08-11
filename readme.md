@@ -62,12 +62,14 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
 - [Compra com carrinho](/purchase/internal.md)
 
   - Catálogo de Produtos
-    - Vitrines
-    - Busca de produtos
-    - Preço e disponibilidade
+    - [Obter categorias de produtos](/product/category.md)
+    - [Vitrines](/showcase/readme.md)
+    - [Busca de produtos](/product/readme.md)
+    - [Preço e disponibilidade](/product/availability.md)
+    - [Obter detalhes de um produto](/product/detail.md)
     - Cálculo de frete
       - Produto virtual
-      - Produto físico
+      - [Produto físico](/product/phisical-shipping.md)
   - Carrinho de compras
     - Obter dados do carrinho
     - Adicionar item físico ao carrinho
@@ -103,3 +105,6 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
   - [Quantidade de produtos](reversal/product-quantity.md)
 
 ## Monitoria
+
+## Laboratórios
+- Implementado um catalogo de pontos - Passo a Passo
