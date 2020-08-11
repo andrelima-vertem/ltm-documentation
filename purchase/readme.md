@@ -51,7 +51,7 @@ Para tal é necessário um código de vendor (vendor id), pois neste caso é cri
 
 Todo o resgate no modelo **authorize e confirm** será permitido e fica a cargo do cliente fazer o controle do que é transacionado. Logo se isto está exposto no front-end o participante poderá autorizar e debitar, gerando problemas futuros para o próprio participante.
 
-### Fluxo de Authorize e Confirm
+### Fluxo de Authorize e Confirm. Com cancelamento em caso de insucesso 
 
 - Autorização de compra
 
