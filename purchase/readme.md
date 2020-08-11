@@ -63,9 +63,14 @@ Todo o resgate no modelo **authorize e confirm** será permitido e fica a cargo 
 
   ![External Vendor](/images/purchase-external-2-diagram.svg)
 
-- Confirmação de compra
+- Confirmação de autorização
 
   ![Confirm Purchase](/images/purchase-external-3-diagram.svg)
+
+- Cancelamento de autorização (não pode ter havido confirmação)
+
+ ![Confirm Purchase](/images/purchase-external-4-diagram.svg)
+
 
 ## Próximos passos
 
