@@ -2,7 +2,7 @@
 
 # Qual o modelo de resgates adotar  
 
-Um resgate é o resultado de um ação em que há, de **um lado o usuário com pontuação disponível (participante)** e do outro, um **fornecedor / parceiro** de um produto ou serviço para ser utilizado por uma campanha como benefício, recompensa ou premiação.
+Um resgate é o resultado de um ação em que há de **um lado, o usuário com pontuação disponível (participante)** e do outro, um **fornecedor / parceiro** de um produto ou serviço para ser utilizado por uma campanha como benefício, recompensa ou premiação.
 
 O participante escolhe que produto ou serviço que vai resgatar, um **débito é feito na conta-corrente (Account)** de origem da campanha, o valor do resgate é convertido e enviado como pagamento para o parceiro e o participante recebe o produto / serviço.
 
