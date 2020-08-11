@@ -1,18 +1,20 @@
 [Início](/readme.md) &raquo; Compras / Resgates &raquo; Qual o modelo de resgates adotar
 
-# Qual o modelo de resgates adotar
-
-## Resgate de pontos
+# Qual o modelo de resgates adotar  
 
 Um resgate é o resultado de um ação em que há, de **um lado o usuário com pontuação disponível (participante)** e do outro, um **fornecedor / parceiro** de um produto ou serviço para ser utilizado por uma campanha como benefício, recompensa ou premiação.
 
 O participante escolhe que produto ou serviço que vai resgatar, um **débito é feito na conta-corrente (Account)** de origem da campanha, o valor do resgate é convertido e enviado como pagamento para o parceiro e o participante recebe o produto / serviço.
 
-## Fluxo genérico de um resgate
+## Fluxo genérico de um resgate (Serve para ambos os modelos)
+
+![Complete Purchase Flow](/images/purchase-complete.svg)
+
+### Fluxo efetuado pelo sistema após isso.
 
 ![Purchase Flow](/images/purchase-diagram.svg)
 
-## Vendor (fornecedor ou parceiro)
+### Vendor (fornecedor ou parceiro)
 
 Empresas parceiras que ofereçam produtos ou serviços como descritos acima, são donominadas: **parceiros (vendors)**.
 
@@ -24,20 +26,20 @@ A Ltm Fidelidade incorporou essa vantagem no portfólio do **CloudLoyalty.**
 
 Clientes que utilizam o CloudLoyalty podem usufruir dessas integrações pois há contratos comerciais que credenciam a Ltm Fidelidade a atendê-los.
 
-## Compras (Resgate)
+## Modelo 1 - Compra com carrinho LTM
 
 Os resgates em parceiros do portfólio são **"Compras internas".**
+Possuem o carrinho (cesta de compras) sob a gestão do **CloudLoyalty.**
 
-### Fluxo genérico de uma compra
+### Fluxo genérico de uma compra com carrinho
 
-![Complete Purchase Flow](/images/purchase-complete.svg)
+![Simple Purchase Flow](/images/purchase-simple.svg)
 
-### Fluxo efetuado pelo sistema após isso.
+### Fluxo efetuado pelo sistema para compra com carrinho.
 
 ![Internal Purchase Flow](/images/purchase-internal-diagram.svg)
 
-
-## Débito de Pontos (Authorize / Confirm)
+## Modelo 2 - Authorize / Confirm (Apenas Débito no CloudLoyalty)
 
 Neste caso o **CloudLoyalty** atua como uma carteira ou conta corrente de pontos.
 
@@ -49,13 +51,23 @@ Neste cenário os parceiros **não fazem parte** do portfólio do CloudLoyalty e
 
 Para tal é necessário um código de vendor (vendor id), pois neste caso é criado um parceiro genérico para representar todos os resgates. O vendor é necessário para finalidades de conciliação e outros tramites administrativos.
 
-### How it works
+### Segurança (Importante)
+
+É requisito de segurança utilizar os endpoints de authorize e confirm encapsulados no backend do cliente.
+
+**Diferente do fluxo com carrinho**, não é correto utilizar esse fluxo no frontend pelo fato de o backend do CloudLoyalty não possuir o controle do que está sendo vendido / debitado.
+
+Todo o resgate no modelo **authorize e confirm** será permitido e fica a cargo do cliente fazer o controle do que é transacionado. Logo se isto está exposto no front-end o participante poderá autorizar e debitar, gerando problemas futuros para o próprio participante.
+
+### Fluxo de Authorize e Confirm
 
 - Autorização de compra
 
   ![Authorize Purchase](/images/purchase-external-1-diagram.svg)
 
 - Compra externa (Responsabilidade da aplicação cliente)
+  - Não é um serviço do CloudLoyalty;
+  - Pode ser vendido qualquer serviço ou produto com 
 
   ![External Vendor](/images/purchase-external-2-diagram.svg)
 

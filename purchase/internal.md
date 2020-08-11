@@ -12,9 +12,9 @@ O participante (usuário) navega no catálogo dos parceiros ativos na campanha d
 Para entender melhor o portfólio de parceiros acesse:
 [Qual o modelo de resgates devo adotar?](/purchase/readme.md)
 
-## Fluxo de uma compra efetuado pelo usuário
+## Fluxo genérico de uma compra efetuada pelo usuário
 
-![Complete Purchase Flow](/images/purchase-complete.svg)
+![Simple Purchase Flow](/images/purchase-simple.svg)
 
 ### Fluxo efetuado pelo sistema após isso.
 
