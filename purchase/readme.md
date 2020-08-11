@@ -34,7 +34,7 @@ Os resgates em parceiros do portfólio são **"Compras internas".**
 
 ## Débito de Pontos (Authorize / Confirm)
 
-Neste caso o CloudLoyalty atua como uma carteira ou conta corrente de pontos.
+Neste caso o **CloudLoyalty** atua como uma carteira ou conta corrente de pontos.
 
 Neste cenário os parceiros **não fazem parte** do portfólio do CloudLoyalty e as **"compras são feitas externamente".**
 
