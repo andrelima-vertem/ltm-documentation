@@ -6,14 +6,6 @@ Um resgate é o resultado de um ação em que há de **um lado, o usuário com p
 
 O participante escolhe que produto ou serviço que vai resgatar, um **débito é feito na conta-corrente (Account)** de origem da campanha, o valor do resgate é convertido e enviado como pagamento para o parceiro e o participante recebe o produto / serviço.
 
-## Fluxo genérico de um resgate (Serve para ambos os modelos)
-
-![Complete Purchase Flow](/images/purchase-complete.svg)
-
-### Fluxo efetuado pelo sistema após isso.
-
-![Purchase Flow](/images/purchase-diagram.svg)
-
 ### Vendor (fornecedor ou parceiro)
 
 Empresas parceiras que ofereçam produtos ou serviços como descritos acima, são donominadas: **parceiros (vendors)**.
