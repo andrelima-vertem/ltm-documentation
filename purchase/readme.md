@@ -28,9 +28,14 @@ Clientes que utilizam o CloudLoyalty podem usufruir dessas integrações pois h�
 
 Os resgates em parceiros do portfólio são **"Compras internas".**
 
-### How it works
+### Fluxo genérico de uma compra
+
+![Complete Purchase Flow](/images/purchase-complete.svg)
+
+### Fluxo efetuado pelo sistema após isso.
 
 ![Internal Purchase Flow](/images/purchase-internal-diagram.svg)
+
 
 ## Débito de Pontos (Authorize / Confirm)
 
