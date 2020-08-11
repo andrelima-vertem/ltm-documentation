@@ -59,7 +59,7 @@ Todo o resgate no modelo **authorize e confirm** será permitido e fica a cargo 
 
 - Compra externa (Responsabilidade da aplicação cliente)
   - Não é um serviço do CloudLoyalty;
-  - Pode ser vendido qualquer serviço ou produto com 
+  - Pode ser vendido qualquer serviço ou produto terceiro;
 
   ![External Vendor](/images/purchase-external-2-diagram.svg)
 
