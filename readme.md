@@ -51,10 +51,10 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
 
 ## Compras / Resgates
 
-- [Qual o modelo de resgates devo adotar?](/purchase/readme.md)
+- [Modelo de resgates e qual devo adotar](/purchase/readme.md)
 - [Tipos de autenticação](/purchase/auth.md)
 
-- [Compras Internas](/purchase/internal.md)
+- [Fluxo de Compra](/purchase/internal.md)
 
   - Catálogo de Produtos
     - Vitrines
@@ -66,11 +66,11 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
   - Carrinho de compras
   - Criando uma compra
 
-- [Compras Externas](/purchase/external.md)
-  - [Authorização de compra](/purchase/authorize.md)
+- [Débito de pontos](/purchase/external.md)
+  - [Authorização de débito](/purchase/authorize.md)
     - Antifraude _(em breve...)_
-  - [Confirmação de compra](/purchase/confirm.md)
-  - [Cancelamento de compra](/purchase/cancel.md)
+  - [Confirmação de débito](/purchase/confirm.md)
+  - [Cancelamento de débito](/purchase/cancel.md)
   - Consultar pedidos
 
 ## Estorno de pedidos

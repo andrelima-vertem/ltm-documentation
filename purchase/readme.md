@@ -24,7 +24,7 @@ A Ltm Fidelidade incorporou essa vantagem no portfólio do **CloudLoyalty.**
 
 Clientes que utilizam o CloudLoyalty podem usufruir dessas integrações pois há contratos comerciais que credenciam a Ltm Fidelidade a atendê-los.
 
-## Compras internas (Resgate)
+## Compras (Resgate)
 
 Os resgates em parceiros do portfólio são **"Compras internas".**
 
@@ -32,9 +32,11 @@ Os resgates em parceiros do portfólio são **"Compras internas".**
 
 ![Internal Purchase Flow](/images/purchase-internal-diagram.svg)
 
-## Compras externas (Resgate)
+## Débito de Pontos (Authorize / Confirm)
 
-Os resgates em parceiros que **não aparecem** no portfólio são denominados **"Compras externas".**
+Neste caso o CloudLoyalty atua como uma carteira ou conta corrente de pontos.
+
+Neste cenário os parceiros **não fazem parte** do portfólio do CloudLoyalty e as **"compras são feitas externamente".**
 
     O CloudLoyalty não efetua chamadas em fornecedores nos casos de compras externas, neste cenário o CloudLoyalty atua apenas como conta-corrente (Account). Ou seja só o débito e estorno dos pontos. É responsabilidade da aplicação cliente efetuar a compra do produto / servico no parceiro / fornecedor (Vendor).
 
@@ -45,12 +47,15 @@ Para tal é necessário um código de vendor (vendor id), pois neste caso é cri
 ### How it works
 
 - Autorização de compra
+
   ![Authorize Purchase](/images/purchase-external-1-diagram.svg)
 
 - Compra externa (Responsabilidade da aplicação cliente)
+
   ![External Vendor](/images/purchase-external-2-diagram.svg)
 
 - Confirmação de compra
+
   ![Confirm Purchase](/images/purchase-external-3-diagram.svg)
 
 ## Próximos passos
