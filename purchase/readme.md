@@ -18,7 +18,7 @@ A Ltm Fidelidade incorporou essa vantagem no portfólio do **CloudLoyalty.**
 
 Clientes que utilizam o CloudLoyalty podem usufruir dessas integrações pois há contratos comerciais que credenciam a Ltm Fidelidade a atendê-los.
 
-## Modelo 1 - Compra com carrinho LTM
+## Modelo 1 - Resgate com carrinho LTM
 
 Os resgates em parceiros do portfólio são **"Compras internas".**
 Possuem o carrinho (cesta de compras) sob a gestão do **CloudLoyalty.**
@@ -31,7 +31,15 @@ Possuem o carrinho (cesta de compras) sob a gestão do **CloudLoyalty.**
 
 ![Internal Purchase Flow](/images/purchase-internal-diagram.svg)
 
-## Modelo 2 - Authorize / Confirm (Apenas Débito no CloudLoyalty)
+## Modelo 2 - Resgate de Serviços
+
+ - Recarga de Celular
+ - Pagamento de Boletos
+ - Milhas Aéreas
+ - Compra de Pontos
+ - Doações de pontos
+
+## Modelo 3 - Authorize / Confirm (Apenas conta corrente)
 
 Neste caso o **CloudLoyalty** atua como uma carteira ou conta corrente de pontos.
 

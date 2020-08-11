@@ -59,7 +59,7 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
 - [Modelo de resgates e qual devo adotar](/purchase/readme.md)
 - [Tipos de autenticação](/purchase/auth.md)
 
-- [Fluxo de Compra](/purchase/internal.md)
+- [Compra com carrinho](/purchase/internal.md)
 
   - Catálogo de Produtos
     - Vitrines
@@ -69,9 +69,25 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
       - Produto virtual
       - Produto físico
   - Carrinho de compras
-  - Criando uma compra
+    - Obter dados do carrinho
+    - Adicionar item físico ao carrinho
+    - Adicionar voucher ao carrinho
+    - Alterar um item do darrinho
+    - Remover um item do carrinho
+    - Adicionar endereço de entrega
+    - Calcular o frete do carrinho
+  - Compra
+    - Criar uma compra
+    - Criar uma compra com cartão de crédito
 
-- [Débito de pontos](/purchase/external.md)
+- [Resgate de serviços] _(em breve...)_
+  - Recarga de Celular - _em breve_
+  - Pagamento de Boletos - _em breve_
+  - Milhas Aéreas - _em breve_
+  - Compra de Pontos - _em breve_
+  - Doações de pontos - _em breve_
+
+- [Authorize e Confirm (Apenas débito de pontos)](/purchase/external.md)
   - [Authorização de débito](/purchase/authorize.md)
     - Antifraude _(em breve...)_
   - [Confirmação de débito](/purchase/confirm.md)
