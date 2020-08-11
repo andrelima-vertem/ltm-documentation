@@ -15,6 +15,7 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
 
 # Sumário
 
+- Primeiros passos com uma campanha de fidelidade _(em breve...)_
 - [Primeiros passos com o **CloudLoyalty**](/starting.md)
 - [Autenticação](/auth/cognito/readme.md)
 
@@ -42,14 +43,18 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
     - Authorization Code _(em breve...)_
     - Password Credentials _(em breve...)_
 
-## Participantes
+## Campanha _(em breve)_
+
+## Participante
+
+- [O que é um participante](/participant/readme.md)
 
 - [Pesquisar um participante - Fluxo Client Credentials](/participant/client_credentials.md)
   - [User Impersonation para Administradores](/participant/user_impersonation.md)
 - [Pesquisar um participante - Fluxo Authorization Code (SSO)](/participant/authorization_code.md)
 - [Saldo de pontos de um participante](/participant/balance.md)
 
-## Compras / Resgates
+## Compra / Resgate
 
 - [Modelo de resgates e qual devo adotar](/purchase/readme.md)
 - [Tipos de autenticação](/purchase/auth.md)
@@ -73,7 +78,7 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
   - [Cancelamento de débito](/purchase/cancel.md)
   - Consultar pedidos
 
-## Estorno de pedidos
+## Estorno de pedido
 - [Introdução](reversal/readme.md) 
 - [Estorno Total](reversal/total.md)
 - Estorno parcial

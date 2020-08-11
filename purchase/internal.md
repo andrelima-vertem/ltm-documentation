@@ -14,11 +14,9 @@ Para entender melhor o portfólio de parceiros acesse:
 
 ## Fluxo de uma compra efetuado pelo usuário
 
+![Complete Purchase Flow](/images/purchase-complete.svg)
 
-
-
-
-## Fluxo de uma compra efetuado pelo sistema
+### Fluxo efetuado pelo sistema após isso.
 
 ![Internal Purchase Flow](/images/purchase-internal-diagram.svg)
 
