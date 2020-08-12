@@ -6,14 +6,13 @@
 
 Os logs do CloudLoyalty seguem as boas práticas recomentadas do Twelve-Factor para arquiteturas com padrões para Cloud e Microsserviços.
 
-É possível conhecer melhor desta boa prática nos artigos:
+É possível conhecer melhor da prática de uso do **Correlation Id** nos artigos:
 
 > ["The Value of Correlation IDs"](https://blog.rapid7.com/2016/12/23/the-value-of-correlation-ids/). Rapid7 Blog. December 23, 2016. Retrieved April 13, 2018.
 
 > Hilton, Peter. ["Correlation IDs for microservices architectures - Peter Hilton".](https://hilton.org.uk/blog/microservices-correlation-id) hilton.org.uk. Retrieved April 13, 2018.
 
 O parâmetro **"X-Correlation-Id"** permite encadear as requisições correlacionando-as.
-
 Assim um conjunto de requisições ou um fluxo passa a possuir o ciclo e a ordem utilizada até chegar no seu resultado.
 
 Isto ajuda a entender certos cenários até a detecção de uma anomalia.
