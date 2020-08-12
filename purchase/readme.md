@@ -33,11 +33,11 @@ Possuem o carrinho (cesta de compras) sob a gestão do **CloudLoyalty.**
 
 ## Modelo 2 - Resgate de Serviços
 
- - Recarga de Celular
- - Pagamento de Boletos
- - Milhas Aéreas
- - Compra de Pontos
- - Doações de pontos
+- Recarga de Celular - _em breve_
+- Pagamento de Boletos - _em breve_
+- Milhas Aéreas - _em breve_
+- Compra de Pontos - _em breve_
+- Doações de pontos - _em breve_
 
 ## Modelo 3 - Authorize / Confirm (Apenas conta corrente)
 
