@@ -18,6 +18,7 @@ Além do mais qualquer nova integração precisa sempre de uma camada middleware
 - Authorization Code
 - Client Credentials
 - Password Credentials
+- [Refresh Token](/refresh_token.md)
 
 ### Links úteis:
 
