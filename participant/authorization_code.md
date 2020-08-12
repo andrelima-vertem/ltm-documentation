@@ -11,7 +11,7 @@ Basicamente é o fluxo que em geral o próprio participante var tomar as ações
 
 Link da documentação no portal do desenvolvedor
 
-> https://api.ltm.digital/docs/services/cloud-loyalty-marketplace-api/operations/ParticipantCloudLoyalty_Get?
+> https://portal.ltm.digital/docs/services/cloud-loyalty-marketplace-api/operations/ParticipantCloudLoyalty_Get?
 
 Para obter os dados do segmento do usuário, bem como o tenant id e login, acesse a documentação do openId Connect:
 [UserInfo Endpoint](/auth/cognito/well-known.md).

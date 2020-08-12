@@ -6,7 +6,7 @@ O busca por saldo é relevante para situações que uma aplicação precise info
 
 Link da documentação no portal do desenvolvedor
 
-> https://cloudloyaltyuat1.portal.azure-api.net/docs/services/cloud-loyalty-marketplace-api/operations/ParticipantCloudLoyalty_GetSimpleBalance?
+> https://portal.ltm.digital/docs/services/cloud-loyalty-marketplace-api/operations/ParticipantCloudLoyalty_GetSimpleBalance?
 
 ## Fluxo Client Credentials
 

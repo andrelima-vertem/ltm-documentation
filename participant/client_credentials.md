@@ -10,7 +10,7 @@ Para tal precisamos utilizar a busca do participante por login ou CPF.
 
 Link da documentação no portal do desenvolvedor
 
-> https://cloudloyaltyuat1.portal.azure-api.net/docs/services/cloud-loyalty-marketplace-api/operations/ParticipantCloudLoyalty_GetByLoginOrDocument?
+> https://portal.ltm.digital/docs/services/cloud-loyalty-marketplace-api/operations/ParticipantCloudLoyalty_GetByLoginOrDocument?
 
 Exemplo de response
 

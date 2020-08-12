@@ -14,7 +14,7 @@ Essa reserva deve ser **confirmada ou cancelada posteriormente.**
 
 Link da documentação técnica no portal do desenvolvedor
 
-> https://cloudloyaltyuat1.portal.azure-api.net/docs/services/cloud-loyalty-marketplace-api/operations/OrderCloudLoyalty_Authorize
+> https://portal.ltm.digital/docs/services/cloud-loyalty-marketplace-api/operations/OrderCloudLoyalty_Authorize
 
 ## Fluxo genérico
 
