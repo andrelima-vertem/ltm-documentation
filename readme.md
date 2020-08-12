@@ -83,7 +83,7 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
     - [Obter dados do carrinho](/cart/readme.md)
     - [Adicionar item físico ao carrinho](/cart/add.md)
     - [Adicionar voucher ao carrinho](/cart/add-voucher.md)
-    - Alterar um item do darrinho
+    - [Alterar um item do carrinho](/cart/update.md)
     - Remover um item do carrinho
     - Adicionar endereço de entrega
     - Calcular o frete do carrinho
