@@ -17,7 +17,7 @@ Recurso utilizado para calcular o frete do carrinho baseado em um CEP (Token de 
 | 103 | Não é possível realizar esta operação. (Tipo de token inválido.) | Não | Verifique se o access_token informado foi gerado corretamente ou se possui permissões para executar a operação. | 401 |
 | **131** | Não conseguimos calcular o frete. Seu CEP pode estar digitado errado ou nosso parceiro não atende à sua região. | Não | Trata-se de um dos erros mais comuns no cálculo de frete. Ocorre quando um parceiro não entrega o produto em uma determinada região ou se o produto não consta mais no estoque do parceiro. *Importante.* | **404** |
 | 271 | Produto(s) não encontrado(s)! | Não | Os dados informados sobre o produto não são válidos, verifique o código do sku / produto. | 422 |
-| 290 | Não foi possível calcular o frete. | **\*Sim** | O CloudLoyalty viabiliza um canal de comunicação para o parceiro apresentar os erros diretamente ao usuário. O código 290 é meio que será apresentado um erro oriundo do parceiro para regras mais genéricas. O nosso sub conterá apenas o encadeamento de informações. O Sub não contêm o tipo. | 422 |
+| 290 | Não foi possível calcular o frete. | **\*Sim** | O CloudLoyalty viabiliza um canal de comunicação para o parceiro apresentar os erros diretamente ao usuário. O código 290 é o meio que será apresentado um erro oriundo do parceiro para regras mais genéricas. O nosso sub conterá apenas o encadeamento de informações. O Sub não contêm o tipo. | 422 |
 
 ### * Tabela Sub Erros - Código 70
 
