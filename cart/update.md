@@ -2,7 +2,7 @@
 
 # Alterar propriedados de um item no carrinho
 
-Recurso utilizado para incluir um item na cesta de compras  
+Recurso utilizado para alterar um item na cesta de compras  
 
 ## Link da documentação no portal do desenvolvedor
 

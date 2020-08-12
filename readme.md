@@ -84,12 +84,12 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
     - [Adicionar item físico ao carrinho](/cart/add.md)
     - [Adicionar voucher ao carrinho](/cart/add-voucher.md)
     - [Alterar um item do carrinho](/cart/update.md)
-    - Remover um item do carrinho
-    - Adicionar endereço de entrega
-    - Calcular o frete do carrinho
+    - [Remover um item do carrinho](/cart/delete.md)
+    - [Adicionar endereço de entrega](/cart/shipping-address.md)
+    - [Calcular o frete do carrinho](/cart/shipping.md)
   - Compra
-    - Criar uma compra
-    - Criar uma compra com cartão de crédito
+    - [Criar uma compra](/purchase/create.md)
+    - [Criar uma compra com cartão de crédito](/purchase/create.md)
 
 - [Resgate de serviços] _(em breve...)_
   - Recarga de Celular - _em breve_
