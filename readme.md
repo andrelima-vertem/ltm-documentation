@@ -15,8 +15,13 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
 
 # Sumário
 
+## Início
+
 - Primeiros passos com uma campanha de fidelidade _(em breve...)_
 - [Primeiros passos com o **CloudLoyalty**](/starting.md)
+
+## Segurança
+
 - [Autenticação](/auth/cognito/readme.md)
 
   - [Qual versão de integração devo escolher?](/auth/new-or-legacy.md)
@@ -42,6 +47,10 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
     - Client Credentials _(em breve...)_
     - Authorization Code _(em breve...)_
     - Password Credentials _(em breve...)_
+
+## Dicas e boas práticas
+
+- [Dicas de utilização das apis do CloudLoyalty](/tips/readme.md)
 
 ## Campanha _(em breve)_
 

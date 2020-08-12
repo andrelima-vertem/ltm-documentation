@@ -11,10 +11,15 @@ Basicamente é o fluxo que em geral o próprio participante var tomar as ações
 
 Link da documentação no portal do desenvolvedor
 
-> https://cloudloyaltyuat1.portal.azure-api.net/docs/services/cloud-loyalty-marketplace-api/operations/ParticipantCloudLoyalty_Get?
+> https://api.ltm.digital/docs/services/cloud-loyalty-marketplace-api/operations/ParticipantCloudLoyalty_Get?
 
 Para obter os dados do segmento do usuário, bem como o tenant id e login, acesse a documentação do openId Connect:
 [UserInfo Endpoint](/auth/cognito/well-known.md).
+
+## Dicas de Uso
+
+> Correlation Id: Utilize o parâmetro "X-Correlation-Id" para gerar uma correlação nos seus fluxos de sistema utilizando o CloudLoyalty.
+[Saiba as vantagens acessando aqui](/tips/readme.md)
 
 ## Próximos passos
 
