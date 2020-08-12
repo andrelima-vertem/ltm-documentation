@@ -9,4 +9,4 @@ Aguarde! Em breve um descritivo sobre Cálculo de frete de um produto...
 ## Dicas de Uso
 
 > Correlation Id: Utilize o parâmetro "X-Correlation-Id" para gerar uma correlação nos seus fluxos de sistema utilizando o CloudLoyalty.
-[Saiba as vantagens acessando aqui](/tips/readme.md)
+[Saiba as vantagens acessando aqui.](/tips/readme.md)
