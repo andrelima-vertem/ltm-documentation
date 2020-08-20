@@ -47,6 +47,7 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
     - Client Credentials _(em breve...)_
     - Authorization Code _(em breve...)_
     - Password Credentials _(em breve...)_
+    - [Refresh Token](/auth/legacy/refresh_token.md)
 
 ## Dicas e boas práticas
 
