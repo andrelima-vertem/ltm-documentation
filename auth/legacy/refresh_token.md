@@ -1,22 +1,22 @@
-## IntroduÁ„o ao Refresh Token
+## Introdu√ß√£o ao Refresh Token
 
-Os access token tem um tempo definido de duraÁ„o, apÛs esse tempo o access token torna-se inv·lido sendo necess·rio a geraÁ„o de um novo token, essa informaÁ„o È retornada junto ao access token. 
-O expires_in È um n˙mero que representa quantos segundos o access token tem de duraÁ„o. 
-Para facilitar a renovaÁ„o do access token e para uma melhor experiÍncia do usu·rio pode ser adotado o mÈtodo de refresh token, tornando desnecess·rio que o usu·rio ou a aplicaÁ„o cliente informe as credenciais novamente.
+Os access token tem um tempo definido de dura√ß√£o, ap√≥s esse tempo o access token torna-se inv√°lido sendo necess√°rio a gera√ß√£o de um novo token, essa informa√ß√£o √© retornada junto ao access token. 
+O expires_in √© um n√∫mero que representa quantos segundos o access token tem de dura√ß√£o. 
+Para facilitar a renova√ß√£o do access token e para uma melhor experi√™ncia do usu√°rio pode ser adotado o m√©todo de refresh token, tornando desnecess√°rio que o usu√°rio ou a aplica√ß√£o cliente informe as credenciais novamente.
 
 ## How It Works
 
-![Refresh Token]
+### Refresh Token
 
-- A aplicaÁ„o cliente gera um token acessando normalmente o endpoint padr„o (/token), porÈm informando um par‚metro chamado refresh_token_active com valor booleano true:
+- A aplica√ß√£o cliente gera um token acessando normalmente o endpoint padr√£o (/token), por√©m informando um par√¢metro chamado refresh_token_active com valor booleano true:
 
 	- grant_type - fluxo que deseja ser utilizado, pode ser o "password"
 	- campaign_id - id da campanha do cliente
-	- username - username do usu·rio do qual se deseja obter autenticaÁ„o 
-	- password - password do usu·rio do qual se deseja obter autenticaÁ„o 
-	- refresh_token_active - para ativar o fluxo de refresh token deve informar o valor true, qualquer outro valor ou a falta do par‚metro n„o ativa o fluxo
+	- username - username do usu√°rio do qual se deseja obter autentica√ß√£o 
+	- password - password do usu√°rio do qual se deseja obter autentica√ß√£o 
+	- refresh_token_active - para ativar o fluxo de refresh token deve informar o valor true, qualquer outro valor ou a falta do par√¢metro n√£o ativa o fluxo
 	
-	- OBS: No header da requisiÁ„o È necess·rio informar o authorization basic passando o base64 do clientid:clientsecret e o content-type È o application/x-www-form-urlencoded
+	- OBS: No header da requisi√ß√£o √© necess√°rio informar o authorization basic passando o base64 do clientid:clientsecret e o content-type √© o application/x-www-form-urlencoded
 
 	- Exemplo de curl:
 		curl --location --request POST 'http://marketplace-api.webpremios.com.br/token' \
@@ -28,9 +28,9 @@ Para facilitar a renovaÁ„o do access token e para uma melhor experiÍncia do usu·
 		--data-urlencode 'campaign_id={id da campanha}' \
 		--data-urlencode 'refresh_token_active=true'
   
-- Ao informar o par‚metro a api retornar· um refresh token v·lido, que de preferÍncia deve ser armazenado / controlado pela aplicaÁ„o cliente, pois futuramente ser· necess·rio para renovaÁ„o do access token.
+- Ao informar o par√¢metro a api retornar√° um refresh token v√°lido, que de prefer√™ncia deve ser armazenado / controlado pela aplica√ß√£o cliente, pois futuramente ser√° necess√°rio para renova√ß√£o do access token.
 
-	- O objeto retornado ter· um formato:
+	- O objeto retornado ter√° um formato:
 	{
 		"access_token": {token}, 
 		"token_type": "bearer",
@@ -43,17 +43,17 @@ Para facilitar a renovaÁ„o do access token e para uma melhor experiÍncia do usu·
 		"scopes": "scope_1, scope_2, scopr_3",
 		"campaign_id": {campaign_id},
 		"home_uri": "/",
-		"name": "Usu·rio Teste",
+		"name": "Usu√°rio Teste",
 		".issued": "Wed, 12 Aug 2020 13:51:00 GMT",
 		".expires": "Wed, 12 Aug 2020 14:51:00 GMT"
 	}
 	
-- Quando o access token atual expira, pode-se fazer uma chamada a api no endpoint padr„o (/token), passando os paramÍtros grant_type = refresh_token e refresh_token = { refresh token armazenado }. 
+- Quando o access token atual expira, pode-se fazer uma chamada a api no endpoint padr√£o (/token), passando os param√™tros grant_type = refresh_token e refresh_token = { refresh token armazenado }. 
 
 	- grant_type - fluxo informado deve ser o "refresh_token"
-	- refresh_token - deve ser o refresh_token devolvido na requisiÁ„o feita para obtenÁ„o do access token
+	- refresh_token - deve ser o refresh_token devolvido na requisi√ß√£o feita para obten√ß√£o do access token
 
-	- OBS: No header da requisiÁ„o È necess·rio informar o authorization basic passando o base64 do clientid:clientsecret e o content-type È o application/x-www-form-urlencoded
+	- OBS: No header da requisi√ß√£o √© necess√°rio informar o authorization basic passando o base64 do clientid:clientsecret e o content-type √© o application/x-www-form-urlencoded
 
 	- Exemplo de curl:
 		curl --location --request POST 'http://marketplace-api.webpremios.com.br/token' \
@@ -62,9 +62,9 @@ Para facilitar a renovaÁ„o do access token e para uma melhor experiÍncia do usu·
 		--data-urlencode 'refresh_token=88642e36-ef83-49fe-baf9-40afda247059' \
 		--data-urlencode 'grant_type=refresh_token'
 
-- A api ir· validar se o refresh token È valido e caso seja ir· retornar um novo access token e um novo refresh token que deve ser armazenado para futuras renovaÁıes.
+- A api ir√° validar se o refresh token √© valido e caso seja ir√° retornar um novo access token e um novo refresh token que deve ser armazenado para futuras renova√ß√µes.
 
-	- O objeto retornado ter· um formato:
+	- O objeto retornado ter√° um formato:
 	{
 		"access_token": {token}, 
 		"token_type": "bearer",
@@ -77,16 +77,16 @@ Para facilitar a renovaÁ„o do access token e para uma melhor experiÍncia do usu·
 		"scopes": "scope_1, scope_2, scopr_3",
 		"campaign_id": {campaign_id},
 		"home_uri": "/",
-		"name": "Usu·rio Teste",
+		"name": "Usu√°rio Teste",
 		".issued": "Wed, 12 Aug 2020 14:52:00 GMT",
 		".expires": "Wed, 12 Aug 2020 15:52:00 GMT"
 	}
 
-- Caso o refresh token seja inv·lido a api ir· retornar o erro "invalid_grant".
+- Caso o refresh token seja inv√°lido a api ir√° retornar o erro "invalid_grant".
 
-	- O objeto retornado ter· um formato:
+	- O objeto retornado ter√° um formato:
 	{
 		"error": "invalid_grant"
 	}
 
-- **Importante ressaltar que mesmo que o par‚metro refresh_token_active n„o seja informado a api ir· devolver um refresh token, porÈm esse ser· inv·lido para renovaÁıes de token.
+- **Importante ressaltar que mesmo que o par√¢metro refresh_token_active n√£o seja informado a api ir√° devolver um refresh token, por√©m esse ser√° inv√°lido para renova√ß√µes de token.
