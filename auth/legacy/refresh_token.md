@@ -1,8 +1,8 @@
 ## Introdução ao Refresh Token
 
-Os access token tem um tempo definido de duração, após esse tempo o access token torna-se inválido sendo necessário a geração de um novo token, essa informação é retornada junto ao access token. 
+Os access token tem um tempo definido de duração, após esse tempo tornam-se inválidos sendo necessário a geração de um novo token, essa informação é retornada junto ao access token. 
 O expires_in é um número que representa quantos segundos o access token tem de duração. 
-Para facilitar a renovação do access token e para uma melhor experiência do usuário pode ser adotado o método de refresh token, tornando desnecessário que o usuário ou a aplicação cliente informe as credenciais novamente.
+Para facilitar a renovação do access token e para uma melhor experiência do usuário pode-se adotar o método de refresh token, tornando desnecessário que o usuário ou a aplicação cliente informe as credenciais novamente.
 
 ## How It Works
 
@@ -62,7 +62,7 @@ Para facilitar a renovação do access token e para uma melhor experiência do u
 		--data-urlencode 'refresh_token=88642e36-ef83-49fe-baf9-40afda247059' \
 		--data-urlencode 'grant_type=refresh_token'
 
-- A api irá validar se o refresh token é valido e caso seja irá retornar um novo access token e um novo refresh token que deve ser armazenado para futuras renovações.
+- A api irá verificar se o refresh token é valido e caso seja irá retornar um novo access token e um novo refresh token que deve ser armazenado para futuras renovações.
 
 	- O objeto retornado terá um formato:
 	{
@@ -90,3 +90,7 @@ Para facilitar a renovação do access token e para uma melhor experiência do u
 	}
 
 - **Importante ressaltar que mesmo que o parâmetro refresh_token_active não seja informado a api irá devolver um refresh token, porém esse será inválido para renovações de token.
+
+### Tempo de Expiração
+
+- O Refresh Token tem duração de 3 meses a partir do momento em que foi gerado. O Access Token tem duração de 1 hora, para saber exatamente quando o token irá expirar basta conferir a informação ".expires" retornada juntamente com o access token.
