@@ -88,8 +88,6 @@ Recurso utilizado para criar uma nova compra.
 
 ### * Tabela Sub Inconsistências - Código 322
 
-### * Tabela Sub Inconsistências - Código 322
-
 | Código (Type) | Mensagem (Message) | Descrição |
 |-|-|-|
 | 1 | Valor do frete não foi informado. |  |
