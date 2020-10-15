@@ -57,6 +57,17 @@ Recurso utilizado para criar uma nova compra.
 | 5 | Compre no máximo 1 produto por loja | Somente um sku do supplier no carrinho: Apenas 1 unidade de um produto para um determinado parceiro. |
 | 6 | Não aprovado pelas regras da promoção | Regras da avon no cluster: Apenas para cliente Avon, regra para cluster de usuários. |
 
+### * Tabela Sub Erros - Código 313
+
+| Código (Type) | Mensagem Exemplo (Message) | Descrição |
+|-|-|-|
+| 1 | Número do cartão não informado. | Ao validar os dados do cartão encontrou-se inconsistência nos dados do cartão infomado (Validação de entrada apenas) |
+| 1 | Nome do titular do cartão não informado. | Ao validar os dados do cartão encontrou-se inconsistência nos dados do cartão infomado (Validação de entrada apenas) |
+| 1 | Validade do cartão não informado. | Ao validar os dados do cartão encontrou-se inconsistência nos dados do cartão infomado (Validação de entrada apenas) |
+| 1 | Bandeira do cartão não infomado. | Ao validar os dados do cartão encontrou-se inconsistência nos dados do cartão infomado (Validação de entrada apenas) |
+| 1 | Validade do cartão não infomada. | Ao validar os dados do cartão encontrou-se inconsistência nos dados do cartão infomado (Validação de entrada apenas) |
+| 2 | Numero do cartão inválido | Validação do cartão de crédito (Regex) |
+
 ### * Tabela Sub Erros - Código 316
 
 | Código | Mensagem Exemplo | Descrição |
