@@ -46,6 +46,7 @@ Recurso utilizado para criar uma nova compra.
 | 330 | Para sua segurança não foi possível concluir a sua transação. | Não | - | - |
 | 331 | Não foi possível concluir a sua transação. | Não | - | - |
 
+
 ### * Tabela Sub Erros - Código 289
 
 | Código | Mensagem Exemplo | Descrição |
@@ -56,6 +57,7 @@ Recurso utilizado para criar uma nova compra.
 | 4 | Não é permitido Magalu e outra loja na mesma compra | "Somente um supplier no carrinho": Apenas produtos de um mesmo parceiro é permitido por compra. |
 | 5 | Compre no máximo 1 produto por loja | Somente um sku do supplier no carrinho: Apenas 1 unidade de um produto para um determinado parceiro. |
 | 6 | Não aprovado pelas regras da promoção | Regras da avon no cluster: Apenas para cliente Avon, regra para cluster de usuários. |
+
 
 ### * Tabela Sub Erros - Código 313
 
@@ -68,12 +70,14 @@ Recurso utilizado para criar uma nova compra.
 | 1 | Validade do cartão não inválida. | Ao validar os dados do cartão encontrou-se inconsistência nos dados do cartão infomado (Validação de entrada apenas) |
 | 1 | Numero do cartão inválido | Validação do cartão de crédito (Regex) |
 
+
 ### * Tabela Sub Erros - Código 316
 
 | Código | Mensagem Exemplo | Descrição |
 |-|-|-|
 | 1 | 4785d50b21c64707adc3 | SKU do produto adicionado não permitido |
 | 2 | Pontos/Cash | Tipo do contexto inválido(ponto ou dinheiro). |
+
 
 ### * Tabela Sub Erros - Código 317
 
@@ -82,12 +86,14 @@ Recurso utilizado para criar uma nova compra.
 | -1 | Cep não disponível para a região | Erros no cálculo de frete, caráter informativo apenas, Erro genérico do parceiro. |
 | -1 | Quantidade de itens excedeu o limite permitido | Erros no cálculo de frete, caráter informativo apenas, Erro genérico do parceiro. |
 
+
 ### * Tabela Sub Inconsistências - Código 322
 
 | Código (Type) | Mensagem (Message) | Descrição |
 |-|-|-|
 | 1 | 4785d50b21c64707adc3 | SKU do produto adicionado não permitido |
 | 2 | Pontos/Cash | Tipo do contexto inválido(ponto ou dinheiro). |
+
 
 ## Dicas de Uso
 
