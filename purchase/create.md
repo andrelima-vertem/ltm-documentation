@@ -38,14 +38,13 @@ Recurso utilizado para criar uma nova compra.
 | 322 | Encontramos dificuldades para realizar a operação. Entre em contato com o administrador do sistema. | **Sim\*** | ERRO GENÉRICO | 422 |
 | 323 | Uma tentativa de resgate foi efetuada, problemas apenas com dinheiro(cash). | Não | Erro ao executar um resgate, motivo: incosistências dos dados. | 500 |
 | 324 | Validando retorno do Banking, avaliando requisição para token. | Não | Erro ao executar um resgate, motivo: problemas com o dinheiro (cash). | - |
-| 325 | Para sua segurança não foi possível concluir a sua transação. | Não | - | - |
-| 326 | Para sua segurança não foi possível concluir a sua transação. Entre em contato com a Central para que possamos confirmar algumas informações. | Não | - | - |
-| 327 | Para sua segurança não foi possível concluir a sua transação. Tente novamente em alguns minutos. | Não | - | - |
-| 328 | Para sua segurança não foi possível concluir a sua transação. Entre em contato com a Central para que possamos confirmar algumas informações. | Não | - | - |
-| 329 | Para sua segurança não foi possível concluir a sua transação. | Não | - | - |
-| 330 | Para sua segurança não foi possível concluir a sua transação. | Não | - | - |
+| 325 | Para sua segurança não foi possível concluir a sua transação. | **Sim** | Negado pela análise de risco. (Significa que o pedido tem algum dado em BLACKLIST, pedido em situação irreversível.) | 422 |
+| 326 | Para sua segurança não foi possível concluir a sua transação. Entre em contato com a Central para que possamos confirmar algumas informações. | **Sim** | Rejeitado por infringir uma ou mais regra de rejeição global. (Significa que foi negado por alguma regra de bloqueio, por exemplo, valor ou quantidade. Sujeito a reversão ou liberação do pedido.) | 422 |
+| 327 | Para sua segurança não foi possível concluir a sua transação. Tente novamente em alguns minutos. | **Sim** | Pedido em análise externa. (Pedido esta em análise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) | 422 |
+| 328 | Para sua segurança não foi possível concluir a sua transação. Entre em contato com a Central para que possamos confirmar algumas informações. | **Sim** | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido.) | 422 |
+| 329 | Para sua segurança não foi possível concluir a sua transação. | **Sim** | Rejeitado por análise de Score. SONAR | 422 |
+| 330 | Para sua segurança não foi possível concluir a sua transação. | **Sim** | Erro genérico do Sonar, quando não foi informado o motivo real da recusa. | - |
 | 331 | Não foi possível concluir a sua transação. | Não | - | - |
-
 
 ### * Tabela Sub Erros - Código 289
 
@@ -58,7 +57,6 @@ Recurso utilizado para criar uma nova compra.
 | 5 | Compre no máximo 1 produto por loja | Somente um sku do supplier no carrinho: Apenas 1 unidade de um produto para um determinado parceiro. |
 | 6 | Não aprovado pelas regras da promoção | Regras da avon no cluster: Apenas para cliente Avon, regra para cluster de usuários. |
 
-
 ### * Tabela Sub Erros - Código 313
 
 | Código (Type) | Mensagem Exemplo (Message) | Descrição |
@@ -70,14 +68,12 @@ Recurso utilizado para criar uma nova compra.
 | 1 | Validade do cartão não inválida. | Ao validar os dados do cartão encontrou-se inconsistência nos dados do cartão infomado (Validação de entrada apenas) |
 | 1 | Numero do cartão inválido | Validação do cartão de crédito (Regex) |
 
-
 ### * Tabela Sub Erros - Código 316
 
 | Código | Mensagem Exemplo | Descrição |
 |-|-|-|
 | 1 | 4785d50b21c64707adc3 | SKU do produto adicionado não permitido |
 | 2 | Pontos/Cash | Tipo do contexto inválido(ponto ou dinheiro). |
-
 
 ### * Tabela Sub Erros - Código 317
 
@@ -86,14 +82,12 @@ Recurso utilizado para criar uma nova compra.
 | -1 | Cep não disponível para a região | Erros no cálculo de frete, caráter informativo apenas, Erro genérico do parceiro. |
 | -1 | Quantidade de itens excedeu o limite permitido | Erros no cálculo de frete, caráter informativo apenas, Erro genérico do parceiro. |
 
-
 ### * Tabela Sub Inconsistências - Código 322
 
 | Código (Type) | Mensagem (Message) | Descrição |
 |-|-|-|
 | 1 | 4785d50b21c64707adc3 | SKU do produto adicionado não permitido |
 | 2 | Pontos/Cash | Tipo do contexto inválido(ponto ou dinheiro). |
-
 
 ## Dicas de Uso
 
