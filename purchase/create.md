@@ -45,6 +45,9 @@ Recurso utilizado para criar uma nova compra.
 | 329 | Para sua segurança não foi possível concluir a sua transação. | **Sim** | Rejeitado por análise de Score. SONAR | 422 |
 | 330 | Para sua segurança não foi possível concluir a sua transação. | **Sim** | Erro genérico do Sonar, quando não foi informado o motivo real da recusa. | - |
 | 331 | Não foi possível concluir a sua transação. | **Sim** | Erro genérico no fechamento de pedido | 422 |
+| 332 | Seu saldo de pontos não é suficiente para concluir o resgate. | **Sim** | Saldo insuficiente do cliente | 422 |
+| 333 | Não foi possível concluir a sua transação. Erro no pagamento | **Sim** | Erro de validação pontos com dinheiro | 422 |
+| 334 | Não foi possível concluir a sua transação. Erro no pagamento | **Sim** | Erro de validação apenas dinheiro | 422 |
 
 ### * Tabela Sub Erros - Código 289
 
