@@ -44,7 +44,7 @@ Recurso utilizado para criar uma nova compra.
 | 328 | Para sua segurança não foi possível concluir a sua transação. Entre em contato com a Central para que possamos confirmar algumas informações. | **Sim** | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido.) | 422 |
 | 329 | Para sua segurança não foi possível concluir a sua transação. | **Sim** | Rejeitado por análise de Score. SONAR | 422 |
 | 330 | Para sua segurança não foi possível concluir a sua transação. | **Sim** | Erro genérico do Sonar, quando não foi informado o motivo real da recusa. | - |
-| 331 | Não foi possível concluir a sua transação. | Não | - | - |
+| 331 | Não foi possível concluir a sua transação. | **Sim** | Erro genérico no fechamento de pedido | 422 |
 
 ### * Tabela Sub Erros - Código 289
 
