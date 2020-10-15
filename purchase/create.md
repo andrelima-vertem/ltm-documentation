@@ -12,7 +12,7 @@ Recurso utilizado para criar uma nova compra.
 
 | Código | Mensagem | Sub | Descrição | Http Status |
 |-|-|-|-|-|
-| 76 | Problemas internos: Endereço de entrega não atribuído. | Não | - | 422 |
+| 76 | Problemas internos: Endereço de entrega não atribuído. | Não | Uma tentativa de resgate foi efetuada com um carrinho montado incorretamente no fluxo de checkout (validação de carrinho). | 422 |
 | 77 | Problemas internos: O carrinho está vazio. | Não | Por algum motivo o carrinho se encontra vazio no momento da validação dos dados. Deve-se incluir um produto no carrinho e caso o erro persista, reportar como um item crítico. | 422 |
 | 86 | O pagamento deste tipo de boleto só pode ser feito nos terminais de auto-atendimento. | Não | - | 422 |
 | 87 | O telefone parece incorreto. Verifique e tente novamente. | Não | - | 422 |
@@ -27,10 +27,10 @@ Recurso utilizado para criar uma nova compra.
 | 289 | Há regras do carrinho que não foram atendidas. | **Sim\*** | As regras são relativas a cada catalogo, parceiro ou campanha. Ou seja, pode ou não estar ativas e trazem esse especícico critério. Consulte as regras de sua campanha e seus respectivos catálogos e parceiros para conhecer quais regras considerar. | 422 |
 | 312 | Uma tentativa de resgate com parametros nulos foi efetuada. | Não | Erro ao executar um resgate, motivo: ausência dos parâmetros necessários.  | 400 |
 | 313 | Uma tentativa de resgate inválida com cartão de crédito foi efetuada. | Não | Erro ao executar um resgate, motivo: os dados informados do cartão de crédito estão incorretos. | 422 |
-| 314 | Uma tentativa de resgate sem informar o Canal foi efetuada. | Não | Erro ao executar um resgate, motivo: o canal informado não foi informado ou está incorreto. | 422 |
+| 314 | Uma tentativa de resgate sem informar o Canal foi efetuada. | Não | Erro ao executar um resgate, motivo: o canal não foi informado ou está incorreto. | 422 |
 | 315 | Uma tentativa de resgate foi efetuada, erros na validação de regras do carrinho. | Não | Erro ao executar um resgate, motivo: há regras  do carrinho que não foram atendidadas. Para maiores informações, consulte **código 289**.  | 422 |
-| 316 | O produto selecionado não é permitido para compras com o contexto informado. | **Sim\*** | Erro ao executar um resgate, motivo: o contexto utilizado não aceita somente dinheiro. | 422 |
-| 317 | Uma tentativa de resgate foi efetuada, porém erros no cálculo de frete impediram a conclusão. | Não | Erro ao executar um resgate, motivo: incoerências nos cálculos de frete. | 422 |
+| 316 | O produto selecionado não é permitido para compras com o contexto informado. | **Sim\*** | Erro ao executar um resgate em um contexto somente pontos ou somente dinheiro. __Consulte a regra "Somente Cash" / "Somente Pontos"__ Este erro ocorre pois um carrinho está inválido para o resgate. Neste caso é informado o contexto e o(s) skus envolvidos. | 422 |
+| 317 | Uma tentativa de resgate foi efetuada, porém erros no cálculo de frete impediram a conclusão. | **Sim** | Erro ao executar um resgate, motivo: incoerência no cálculo de frete. | 422 |
 | 318 | Uma tentativa de resgate foi efetuada, porém há divergência(s) no(s) item(s) - preço / estoque. | Não | Erro ao executar um resgate, motivo: preço divergente ou item sem estoque.  | 422 |
 | 319 | Uma tentativa de resgate foi efetuada, porém PointsValue é inválido. | Não | Erro ao executar um resgate, motivo: quantidade insulficiente de Pontos | 422 |
 | 320 | Uma tentativa de resgate foi efetuada, problemas com pontos e dinheiro (cash). | Não | Erro com o valor dos pontos. | 422 |
@@ -65,8 +65,8 @@ Recurso utilizado para criar uma nova compra.
 | 1 | Nome do titular do cartão não informado. | Ao validar os dados do cartão encontrou-se inconsistência nos dados do cartão infomado (Validação de entrada apenas) |
 | 1 | Validade do cartão não informado. | Ao validar os dados do cartão encontrou-se inconsistência nos dados do cartão infomado (Validação de entrada apenas) |
 | 1 | Bandeira do cartão não infomado. | Ao validar os dados do cartão encontrou-se inconsistência nos dados do cartão infomado (Validação de entrada apenas) |
-| 1 | Validade do cartão não infomada. | Ao validar os dados do cartão encontrou-se inconsistência nos dados do cartão infomado (Validação de entrada apenas) |
-| 2 | Numero do cartão inválido | Validação do cartão de crédito (Regex) |
+| 1 | Validade do cartão não inválida. | Ao validar os dados do cartão encontrou-se inconsistência nos dados do cartão infomado (Validação de entrada apenas) |
+| 1 | Numero do cartão inválido | Validação do cartão de crédito (Regex) |
 
 ### * Tabela Sub Erros - Código 316
 
@@ -74,6 +74,13 @@ Recurso utilizado para criar uma nova compra.
 |-|-|-|
 | 1 | 4785d50b21c64707adc3 | SKU do produto adicionado não permitido |
 | 2 | Pontos/Cash | Tipo do contexto inválido(ponto ou dinheiro). |
+
+### * Tabela Sub Erros - Código 317
+
+| Código | Mensagem Exemplo | Descrição |
+|-|-|-|
+| -1 | Cep não disponível para a região | Erros no cálculo de frete, caráter informativo apenas, Erro genérico do parceiro. |
+| -1 | Quantidade de itens excedeu o limite permitido | Erros no cálculo de frete, caráter informativo apenas, Erro genérico do parceiro. |
 
 ### * Tabela Sub Inconsistências - Código 322
 
