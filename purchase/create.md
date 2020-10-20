@@ -1,3 +1,4 @@
+
 [Início](/readme.md) &raquo; Compras / Resgates &raquo; Criar uma compra com carrinho
 
 # Criar nova compra
@@ -38,16 +39,16 @@ Recurso utilizado para criar uma nova compra.
 | 322 | Encontramos dificuldades para realizar a operação. Entre em contato com o administrador do sistema. | **Sim\*** | ERRO GENÉRICO | 422 |
 | 323 | Uma tentativa de resgate foi efetuada, problemas apenas com dinheiro(cash). | Não | Erro ao executar um resgate, motivo: incosistências dos dados. | 500 |
 | 324 | Validando retorno do Banking, avaliando requisição para token. | Não | Erro ao executar um resgate, motivo: problemas com o dinheiro (cash). | - |
-| 325 | Para sua segurança não foi possível concluir a sua transação. | **Sim** | Negado pela análise de risco. (Significa que o pedido tem algum dado em BLACKLIST, pedido em situação irreversível.) | 422 |
-| 326 | Para sua segurança não foi possível concluir a sua transação. Entre em contato com a Central para que possamos confirmar algumas informações. | **Sim** | Rejeitado por infringir uma ou mais regra de rejeição global. (Significa que foi negado por alguma regra de bloqueio, por exemplo, valor ou quantidade. Sujeito a reversão ou liberação do pedido.) | 422 |
-| 327 | Para sua segurança não foi possível concluir a sua transação. Tente novamente em alguns minutos. | **Sim** | Pedido em análise externa. (Pedido esta em análise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) | 422 |
-| 328 | Para sua segurança não foi possível concluir a sua transação. Entre em contato com a Central para que possamos confirmar algumas informações. | **Sim** | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido.) | 422 |
-| 329 | Para sua segurança não foi possível concluir a sua transação. | **Sim** | Rejeitado por análise de Score. SONAR | 422 |
-| 330 | Para sua segurança não foi possível concluir a sua transação. | **Sim** | Erro genérico do Sonar, quando não foi informado o motivo real da recusa. | - |
-| 331 | Não foi possível concluir a sua transação. | **Sim** | Erro genérico no fechamento de pedido | 422 |
-| 332 | Seu saldo de pontos não é suficiente para concluir o resgate. | **Sim** | Saldo insuficiente do cliente | 422 |
-| 333 | Não foi possível concluir a sua transação. Erro no pagamento | **Sim** | Erro de validação pontos com dinheiro | 422 |
-| 334 | Não foi possível concluir a sua transação. Erro no pagamento | **Sim** | Erro de validação apenas dinheiro | 422 |
+| 325 | Para sua segurança não foi possível concluir a sua transação. | **Sim\*** | Negado pela análise de risco. (Significa que o pedido tem algum dado em BLACKLIST, pedido em situação irreversível.) | 422 |
+| 326 | Para sua segurança não foi possível concluir a sua transação. Entre em contato com a Central para que possamos confirmar algumas informações. | **Sim\*** | Rejeitado por infringir uma ou mais regra de rejeição global. (Significa que foi negado por alguma regra de bloqueio, por exemplo, valor ou quantidade. Sujeito a reversão ou liberação do pedido.) | 422 |
+| 327 | Para sua segurança não foi possível concluir a sua transação. Tente novamente em alguns minutos. | **Sim\*** | Pedido em análise externa. (Pedido esta em análise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) | 422 |
+| 328 | Para sua segurança não foi possível concluir a sua transação. Entre em contato com a Central para que possamos confirmar algumas informações. | **Sim\*** | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido.) | 422 |
+| 329 | Para sua segurança não foi possível concluir a sua transação. | **Sim\*** | Rejeitado por análise de Score. SONAR | 422 |
+| 330 | Para sua segurança não foi possível concluir a sua transação. | **Sim\*** | Erro genérico do Sonar, quando não foi informado o motivo real da recusa. | - |
+| 331 | Não foi possível concluir a sua transação. | **Sim\*** | Erro genérico no fechamento de pedido | 422 |
+| 332 | Seu saldo de pontos não é suficiente para concluir o resgate. | **Sim\*** | Saldo insuficiente do cliente | 422 |
+| 333 | Não foi possível concluir a sua transação. Erro no pagamento | **Sim\*** | Erro de validação pontos com dinheiro | 422 |
+| 334 | Não foi possível concluir a sua transação. Erro no pagamento | **Sim\*** | Erro de validação apenas dinheiro | 422 |
 
 ### * Tabela Sub Erros - Código 289
 
@@ -89,8 +90,119 @@ Recurso utilizado para criar uma nova compra.
 
 | Código (Type) | Mensagem (Message) | Descrição |
 |-|-|-|
-| 1 | 4785d50b21c64707adc3 | SKU do produto adicionado não permitido |
-| 2 | Pontos/Cash | Tipo do contexto inválido(ponto ou dinheiro). |
+| 1 | Valor do frete não foi informado. |  |
+| 2 | Não há itens no pedido. |  |
+| 3 | Valor do pedido é diferente do valor do produto mais o valor do frete. |  |
+| 4 | Valor do pedido é diferente do valor dos pagamentos (Pontos + Complemento). |  |
+| 5 | Valor do resgate menor que o valor do estorno. |  |
+| 6 | Pedido sem participante válido. |  |
+| 7 | Pedido sem fornecedor válido. |  |
+| 8 | Pedido sem dados de entrega. |  |
+| 9 | Quantidade de item inválida. |  |
+| 11 | Dados de pagamento não fornecido. |  |
+| 12 | Sku do produto inválido ou inexistente. |  |
+| 13 | Preço de va do produto não fornecido. |  |
+| 14 | Data prevista de entrega não fornecido. |  |
+| 15 | Cpf ou Cnpj do participante não fornecido. |  |
+| 16 | Email do participante não fornecido. |  |
+| 17 | Tipo de pessoa do participante não fornecido. |  |
+| 18 | Genêro não fornecido. |  |
+| 19 | Nome do participante não fornecido. |  |
+| 20 | Nome da empresa não fornecido. |  |
+| 21 | Telefone não fornecido. |  |
+| 22 | Nome do contato de entrega não fornecido. |  |
+| 23 | Nome do endereço não fornecido. |  |
+| 24 | Endereço não fornecido. |  |
+| 25 | Número do endereço de entrega não fornecido. |  |
+| 26 | Bairro do endereço não fornecido. |  |
+| 27 | Cidade do endereço não fornecido. |  |
+| 28 | Estado do endereço não fornecido. |  |
+| 29 | Cep não fornecido ou inválido. |  |
+| 30 | A quantidade máxima de produtos permitida é de até 9 itens. |  |
+| 31 | A quantidade máxima do mesmo produto é de até 5 itens. |  |
+| 32 | Ponto de Referência deve ter no mínimo 4 caracteres. |  |
+| 33 | Informações como Operadora, DDD e número do celular não foram informados. |  |
+| 34 | Número do endereço informado deve conter apenas números. |  |
+| 35 | O pagamento só poderá ser realizado com até 2 dias de antecedência do vencimento do seu boleto |  |
+| 36 | Os campos Nº do boleto, Data de Vencimento, CPF e Valor da conta são obrigatórios. |  |
+| 37 | O horário permitido para pagamento é entre 8:00 e 21:00 e os dias da semana permitidos são Segunda, Terça, Quarta, Quinta e Sexta-Feira. |  |
+| 38 | Ponto de Referência deve ter no máximo 100 caracteres. |  |
+| 39 | Complemento deve ter no máximo 20 caracteres. |  |
+| 40 | Número deve ter no máximo 5 caracteres para o parceiro Magazine Luiza. |  |
+| 41 | Campo complemento obrigatório para esse parceiro, favor preencher (Ex.: Casa/Loja) |  |
+| 42 | Complemento deve ter no máximo 100 caracteres. |  |
+| 43 | Sobrenome do destinatário não fornecido. |  |
+| 44 | Você já realizou um pagamento em menos de 24 horas. Aguarde o prazo para efetuar um novo pagamento |  |
+
+### * Tabela Sub Erros - Código 325
+
+| Código | Mensagem Exemplo | Descrição |
+|-|-|-|
+| 1 | - | - |
+|
+
+### * Tabela Sub Erros - Código 326
+
+| Código | Mensagem Exemplo | Descrição |
+|-|-|-|
+| 1 | - | - |
+|
+
+### * Tabela Sub Erros - Código 327
+
+| Código | Mensagem Exemplo | Descrição |
+|-|-|-|
+| 1 | - | - |
+|
+
+### * Tabela Sub Erros - Código 328
+
+| Código | Mensagem Exemplo | Descrição |
+|-|-|-|
+| 1 | - | - |
+|
+
+### * Tabela Sub Erros - Código 329
+
+| Código | Mensagem Exemplo | Descrição |
+|-|-|-|
+| 1 | - | - |
+|
+
+### * Tabela Sub Erros - Código 330
+
+| Código | Mensagem Exemplo | Descrição |
+|-|-|-|
+| 1 | - | - |
+|
+
+### * Tabela Sub Erros - Código 331
+
+| Código | Mensagem Exemplo | Descrição |
+|-|-|-|
+| 1 | - | - |
+|
+
+### * Tabela Sub Erros - Código 332
+
+| Código | Mensagem Exemplo | Descrição |
+|-|-|-|
+| 1 | - | - |
+|
+
+### * Tabela Sub Erros - Código 333
+
+| Código | Mensagem Exemplo | Descrição |
+|-|-|-|
+| 1 | - | - |
+|
+
+### * Tabela Sub Erros - Código 334
+
+| Código | Mensagem Exemplo | Descrição |
+|-|-|-|
+| 1 | - | - |
+|
 
 ## Dicas de Uso
 
