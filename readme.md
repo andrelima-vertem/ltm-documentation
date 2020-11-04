@@ -91,6 +91,7 @@ A api do **LTM CloudLoyalty** foi desenvolvida baseada em padrões [**REST**](ht
   - Compra
     - [Criar uma compra](/purchase/create.md)
     - [Criar uma compra com cartão de crédito](/purchase/create.md)
+    - [Criar uma compra com 2FA (Two-factor Authentication)](/purchase/create-2fa.md)
 
 - [Resgate de serviços] _(em breve...)_
   - Recarga de Celular - _em breve_
