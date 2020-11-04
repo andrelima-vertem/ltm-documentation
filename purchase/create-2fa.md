@@ -17,7 +17,6 @@ Nos casos que o resgate não possui a ferramenta de 2FA ativa o processo de resg
 
 | Código | Mensagem | Sub | Descrição | Http Status |
 |-|-|-|-|-|
-|11|O pagamento deste tipo de boleto só pode ser feito nos terminais de auto-atendimento.|Não||422|
 |11|O telefone parece incorreto. Verifique e tente novamente.|Não||422|
 |11|Não foi possível concluir o seu pedido. Tente novamente.|Não||422|
 
