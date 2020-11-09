@@ -11,44 +11,44 @@ Recurso utilizado para criar uma nova compra.
 
 ## Dicionário de Erros
 
-| Código | Mensagem | Sub | Descrição | Http Status |
-|-|-|-|-|-|
-| 76 | Problemas internos: Endereço de entrega não atribuído. | Não | Uma tentativa de resgate foi efetuada com um carrinho montado incorretamente no fluxo de checkout (validação de carrinho). | 422 |
-| 77 | Problemas internos: O carrinho está vazio. | Não | Por algum motivo o carrinho se encontra vazio no momento da validação dos dados. Deve-se incluir um produto no carrinho e caso o erro persista, reportar como um item crítico. | 422 |
-| 86 | O pagamento deste tipo de boleto só pode ser feito nos terminais de auto-atendimento. | Não | - | 422 |
-| 87 | O telefone parece incorreto. Verifique e tente novamente. | Não | - | 422 |
-| 97 | Não foi possível finalizar seu pedido. Tente novamente. | Não | - | 422 |
-| 99 | Problemas com o processamento do token. | Não | - | 400 |
-| 100 | Encontramos dificuldades para realizar a operação. Tente novamente em instantes. - Consulta de Saldo indisponível, tente novamente. | Não | - | 400 |
-| 103 | Não é possível realizar esta operação. (Tipo de token inválido.) | Não | Verifique se o access_token informado foi gerado corretamente ou se possui permissões para executar a operação. | 401 |
-| 120 | Sistema indisponível no momento. Tente novamente em instantes. | Não | - | - |
-| 122 | Bandeira não encontrada na base de configuração! | Não | - | - |
-| 123 | Quantidade de parcelas excedentes | Não | - | - |
-| 279 | Catálogo não permite a utilização de pagamento total no dinheiro! | Não | - | - |
-| 289 | Há regras do carrinho que não foram atendidas. | **Sim\*** | As regras são relativas a cada catalogo, parceiro ou campanha. Ou seja, pode ou não estar ativas e trazem esse especícico critério. Consulte as regras de sua campanha e seus respectivos catálogos e parceiros para conhecer quais regras considerar. | 422 |
-| 312 | Uma tentativa de resgate com parametros nulos foi efetuada. | Não | Erro ao executar um resgate, motivo: ausência dos parâmetros necessários.  | 400 |
-| 313 | Uma tentativa de resgate inválida com cartão de crédito foi efetuada. | Não | Erro ao executar um resgate, motivo: os dados informados do cartão de crédito estão incorretos. | 422 |
-| 314 | Uma tentativa de resgate sem informar o Canal foi efetuada. | Não | Erro ao executar um resgate, motivo: o canal não foi informado ou está incorreto. | 422 |
-| 315 | Uma tentativa de resgate foi efetuada, erros na validação de regras do carrinho. | Não | Erro ao executar um resgate, motivo: há regras  do carrinho que não foram atendidadas. Para maiores informações, consulte **código 289**.  | 422 |
-| 316 | O produto selecionado não é permitido para compras com o contexto informado. | **Sim\*** | Erro ao executar um resgate em um contexto somente pontos ou somente dinheiro. __Consulte a regra "Somente Cash" / "Somente Pontos"__ Este erro ocorre pois um carrinho está inválido para o resgate. Neste caso é informado o contexto e o(s) skus envolvidos. | 422 |
-| 317 | Uma tentativa de resgate foi efetuada, porém erros no cálculo de frete impediram a conclusão. | **Sim** | Erro ao executar um resgate, motivo: incoerência no cálculo de frete. | 422 |
-| 318 | Uma tentativa de resgate foi efetuada, porém há divergência(s) no(s) item(s) - preço / estoque. | Não | Erro ao executar um resgate, motivo: preço divergente ou item sem estoque.  | 422 |
-| 319 | Uma tentativa de resgate foi efetuada, porém PointsValue é inválido. | Não | Erro ao executar um resgate, motivo: quantidade insulficiente de Pontos | 422 |
-| 320 | Uma tentativa de resgate foi efetuada, problemas com pontos e dinheiro (cash). | Não | Erro com o valor dos pontos. | 422 |
-| 321 | Uma tentativa de resgate foi efetuada, problemas com o saldo do participante. | Não | Erro ao executar um resgate, motivo: problemas com o valor dos pontos ou do dinheiro (cash). | - |
-| 322 | Encontramos dificuldades para realizar a operação. Entre em contato com o administrador do sistema. | **Sim\*** | ERRO GENÉRICO | 422 |
-| 323 | Uma tentativa de resgate foi efetuada, problemas apenas com dinheiro(cash). | Não | Erro ao executar um resgate, motivo: incosistências dos dados. | 500 |
-| 324 | Validando retorno do Banking, avaliando requisição para token. | Não | Erro ao executar um resgate, motivo: problemas com o dinheiro (cash). | - |
-| 325 | Para sua segurança não foi possível concluir a sua transação. | **Sim\*** | Negado pela análise de risco. (Significa que o pedido tem algum dado em BLACKLIST, pedido em situação irreversível.) | 422 |
-| 326 | Para sua segurança não foi possível concluir a sua transação. Entre em contato com a Central para que possamos confirmar algumas informações. | **Sim\*** | Rejeitado por infringir uma ou mais regra de rejeição global. (Significa que foi negado por alguma regra de bloqueio, por exemplo, valor ou quantidade. Sujeito a reversão ou liberação do pedido.) | 422 |
-| 327 | Para sua segurança não foi possível concluir a sua transação. Tente novamente em alguns minutos. | **Sim\*** | Pedido em análise externa. (Pedido esta em análise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) | 422 |
-| 328 | Para sua segurança não foi possível concluir a sua transação. Entre em contato com a Central para que possamos confirmar algumas informações. | **Sim\*** | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido.) | 422 |
-| 329 | Para sua segurança não foi possível concluir a sua transação. | **Sim\*** | Rejeitado por análise de Score. SONAR | 422 |
-| 330 | Para sua segurança não foi possível concluir a sua transação. | **Sim\*** | Erro genérico do Sonar, quando não foi informado o motivo real da recusa. | - |
-| 331 | Não foi possível concluir a sua transação. | **Sim\*** | Erro genérico no fechamento de pedido | 422 |
-| 332 | Seu saldo de pontos não é suficiente para concluir o resgate. | **Sim\*** | Saldo insuficiente do cliente | 422 |
-| 333 | Não foi possível concluir a sua transação. Erro no pagamento | **Sim\*** | Erro de validação pontos com dinheiro | 422 |
-| 334 | Não foi possível concluir a sua transação. Erro no pagamento | **Sim\*** | Erro de validação apenas dinheiro | 422 |
+| Código | Mensagem |Sub Mensagem| Sub | Descrição | Http Status |
+|-|-|-|-|-|-|
+| 76 | Problemas internos: Endereço de entrega não atribuído. |-| Não | Uma tentativa de resgate foi efetuada com um carrinho montado incorretamente no fluxo de checkout (validação de carrinho). | 422 |
+| 77 | Problemas internos: O carrinho está vazio. |-| Não | Por algum motivo o carrinho se encontra vazio no momento da validação dos dados. Deve-se incluir um produto no carrinho e caso o erro persista, reportar como um item crítico. | 422 |
+| 86 | O pagamento deste tipo de boleto só pode ser feito nos terminais de auto-atendimento. |-| Não | - | 422 |
+| 87 | O telefone parece incorreto. Verifique e tente novamente.|-| Não | - | 422 |
+| 97 | Não foi possível finalizar seu pedido. Tente novamente. |-| Não | - | 422 |
+| 99 | Problemas com o processamento do token.|-| Não | - | 400 |
+| 100 | Encontramos dificuldades para realizar a operação. Tente novamente em instantes. - Consulta de Saldo indisponível, tente novamente. |-| Não | - | 400 |
+| 103 | Não é possível realizar esta operação. (Tipo de token inválido.) |-| Não | Verifique se o access_token informado foi gerado corretamente ou se possui permissões para executar a operação. |-| 401 |
+| 120 | Sistema indisponível no momento. Tente novamente em instantes. |-| Não | - | - |
+| 122 | Bandeira não encontrada na base de configuração! |-| Não | - | - |
+| 123 | Quantidade de parcelas excedentes |-| Não | - | - |
+| 279 | Catálogo não permite a utilização de pagamento total no dinheiro! |-| Não | - | - |
+| 289 | Há regras do carrinho que não foram atendidas. |-| **Sim\*** | As regras são relativas a cada catalogo, parceiro ou campanha. Ou seja, pode ou não estar ativas e trazem esse especícico critério. Consulte as regras de sua campanha e seus respectivos catálogos e parceiros para conhecer quais regras considerar. | 422 |
+| 312 | Uma tentativa de resgate com parametros nulos foi efetuada. |-| Não | Erro ao executar um resgate, motivo: ausência dos parâmetros necessários.  | 400 |
+| 313 | Uma tentativa de resgate inválida com cartão de crédito foi efetuada. |-|-| | Não | Erro ao executar um resgate, motivo: os dados informados do cartão de crédito estão incorretos. | 422 |
+| 314 | Uma tentativa de resgate sem informar o Canal foi efetuada. |-| Não | Erro ao executar um resgate, motivo: o canal não foi informado ou está incorreto. | 422 |
+| 315 | Uma tentativa de resgate foi efetuada, erros na validação de regras do carrinho. |-| Não | Erro ao executar um resgate, motivo: há regras  do carrinho que não foram atendidadas. Para maiores informações, consulte **código 289**.  | 422 |
+| 316 | O produto selecionado não é permitido para compras com o contexto informado. |-| **Sim\*** | Erro ao executar um resgate em um contexto somente pontos ou somente dinheiro. __Consulte a regra "Somente Cash" / "Somente Pontos"__ Este erro ocorre pois um carrinho está inválido para o resgate. Neste caso é informado o contexto e o(s) skus envolvidos. | 422 |
+| 317 | Uma tentativa de resgate foi efetuada, porém erros no cálculo de frete impediram a conclusão. |-| **Sim** | Erro ao executar um resgate, motivo: incoerência no cálculo de frete. | 422 |
+| 318 | Uma tentativa de resgate foi efetuada, porém há divergência(s) no(s) item(s) - preço / estoque. |-| Não | Erro ao executar um resgate, motivo: preço divergente ou item sem estoque.  | 422 |
+| 319 | Uma tentativa de resgate foi efetuada, porém PointsValue é inválido. |-| Não | Erro ao executar um resgate, motivo: quantidade insulficiente de Pontos | 422 |
+| 320 | Uma tentativa de resgate foi efetuada, problemas com pontos e dinheiro (cash). |-| Não | Erro com o valor dos pontos. | 422 |
+| 321 | Uma tentativa de resgate foi efetuada, problemas com o saldo do participante. |-| Não | Erro ao executar um resgate, motivo: problemas com o valor dos pontos ou do dinheiro (cash). | - |
+| 322 | Encontramos dificuldades para realizar a operação. Entre em contato com o administrador do sistema. |-| **Sim\*** | ERRO GENÉRICO | 422 |
+| 323 | Uma tentativa de resgate foi efetuada, problemas apenas com dinheiro(cash). |-| Não | Erro ao executar um resgate, motivo: incosistências dos dados. | 500 |
+| 324 | Validando retorno do Banking, avaliando requisição para token. |-| Não | Erro ao executar um resgate, motivo: problemas com o dinheiro (cash). | - |
+| 325 | Não foi possível concluir {type} |**Sim\***| Não | Negado pela análise de risco. (Significa que o pedido tem algum dado em BLACKLIST, pedido em situação irreversível.) | 422 |
+| 326 | Para sua segurança não foi possível concluir {type} |**Sim\***| Não | Rejeitado por infringir uma ou mais regra de rejeição global. (Significa que foi negado por alguma regra de bloqueio, por exemplo, valor ou quantidade. Sujeito a reversão ou liberação do pedido.) | 422 |
+| 327 | Não foi possível concluir {type} |**Sim\***| Não | Pedido em análise externa. (Pedido esta em análise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) | 422 |
+| 328 | Sua transferência {type} |**Sim\***| Não | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido.) | 422 |
+| 329 | Por questões de segurança, {type} |**Sim\***| Não | Rejeitado por análise de Score. SONAR | 422 |
+| 330 | Para sua segurança não foi possível concluir a sua transação. |-| **Sim\*** | Erro genérico do Sonar, quando não foi informado o motivo real da recusa. | - |
+| 331 | Não foi possível concluir a sua transação. |-| **Sim\*** | Erro genérico no fechamento de pedido | 422 |
+| 332 | Seu saldo de pontos não é suficiente para concluir o resgate. |-| **Sim\*** | Saldo insuficiente do cliente | 422 |
+| 333 | Não foi possível concluir a sua transação. Erro no pagamento |-| **Sim\*** | Erro de validação pontos com dinheiro | 422 |
+| 334 | Não foi possível concluir a sua transação. Erro no pagamento |-| **Sim\*** | Erro de validação apenas dinheiro | 422 |
 
 ### * Tabela Sub Erros - Código 289
 
@@ -134,75 +134,99 @@ Recurso utilizado para criar uma nova compra.
 | 43 | Sobrenome do destinatário não fornecido. |  |
 | 44 | Você já realizou um pagamento em menos de 24 horas. Aguarde o prazo para efetuar um novo pagamento |  |
 
-### * Tabela Sub Erros - Código 325
+### * Tabela Sub Mensagem e Type - Código 325
+| Sub Mensagem |
+|-|
+|Entre em contato com a Central para que possamos confirmar algumas informações.|
 
-| Código | Mensagem Exemplo | Descrição |
+| Type (Tipo de Fechamento) | Mensagem Exemplo | Descrição |
 |-|-|-|
-| 1 | - | - |
-|
+| DOAÇÕES | Não foi possível concluir sua transferência. | Negado pela análise de risco. (Significa que o pedido tem algum dado em BLACKLIST, pedido em situação irreversível.) |
+| RECARGA DE CELULAR | Não foi possível concluir o seu resgate. | Rejeitado por infringir uma ou mais regra de rejeição global. (Significa que foi negado por alguma regra de bloqueio, por exemplo, valor ou quantidade. Sujeito a reversão ou liberação do pedido.) |
+| E-COMMERCE | Não foi possível concluir a sua compra. | Pedido em análise de externa. (Pedido esta em analise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) |
+| SHOPPING | Não foi possível concluir a sua compra. | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido).
 
-### * Tabela Sub Erros - Código 326
+### * Tabela SubMensagem - Código 326
 
-| Código | Mensagem Exemplo | Descrição |
+| Sub Mensagem |
+|-|
+|Tente novamente mais tarde ou entre em contato com a Central.|
+
+| Type (Tipo de Fechamento) | Mensagem Exemplo | Descrição |
 |-|-|-|
-| 1 | - | - |
-|
+| DOAÇÕES | Não foi possível concluir sua transferência. | Negado pela análise de risco. (Significa que o pedido tem algum dado em BLACKLIST, pedido em situação irreversível.) |
+| RECARGA DE CELULAR | Não foi possível concluir o seu resgate. | Rejeitado por infringir uma ou mais regra de rejeição global. (Significa que foi negado por alguma regra de bloqueio, por exemplo, valor ou quantidade. Sujeito a reversão ou liberação do pedido.) |
+| E-COMMERCE | Não foi possível concluir a sua compra. | Pedido em análise de externa. (Pedido esta em analise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) |
+| SHOPPING | Não foi possível concluir a sua compra. | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido). |
 
-### * Tabela Sub Erros - Código 327
+### * Tabela SubMensagem - Código 327
 
-| Código | Mensagem Exemplo | Descrição |
+| Sub Mensagem |
+|-|
+|Tente novamente mais tarde ou entre em contato com a Central.|
+
+| Type (Tipo de Fechamento) | Mensagem Exemplo | Descrição |
 |-|-|-|
-| 1 | - | - |
-|
+| DOAÇÕES | Não foi possível concluir sua transferência. | Negado pela análise de risco. (Significa que o pedido tem algum dado em BLACKLIST, pedido em situação irreversível.) |
+| RECARGA DE CELULAR | Não foi possível concluir o seu resgate. | Rejeitado por infringir uma ou mais regra de rejeição global. (Significa que foi negado por alguma regra de bloqueio, por exemplo, valor ou quantidade. Sujeito a reversão ou liberação do pedido.) |
+| E-COMMERCE | Não foi possível concluir a sua compra. | Pedido em análise de externa. (Pedido esta em analise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) |
+| SHOPPING | Não foi possível concluir a sua compra. | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido).
 
-### * Tabela Sub Erros - Código 328
+### * Tabela SubMensagem - Código 328
 
-| Código | Mensagem Exemplo | Descrição |
+| Sub Mensagem |
+|-|
+|Tente novamente mais tarde ou entre em contato com a Central.|
+
+| Type (Tipo de Fechamento) | Mensagem Exemplo | Descrição |
 |-|-|-|
-| 1 | - | - |
-|
+| DOAÇÕES | Não foi possível concluir sua transferência. | Negado pela análise de risco. (Significa que o pedido tem algum dado em BLACKLIST, pedido em situação irreversível.) |
+| RECARGA DE CELULAR | Não foi possível concluir o seu resgate. | Rejeitado por infringir uma ou mais regra de rejeição global. (Significa que foi negado por alguma regra de bloqueio, por exemplo, valor ou quantidade. Sujeito a reversão ou liberação do pedido.) |
+| E-COMMERCE | Não foi possível concluir a sua compra. | Pedido em análise de externa. (Pedido esta em analise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) |
+| SHOPPING | Não foi possível concluir a sua compra. | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido).
 
-### * Tabela Sub Erros - Código 329
+### * Tabela SubMensagem - Código 329
 
-| Código | Mensagem Exemplo | Descrição |
+| Sub Mensagem |
+|-|
+|Entre em contato com a central de atendimento para confirmar algumas informações. |
+
+| Type (Tipo de Fechamento) | Mensagem Exemplo | Descrição |
 |-|-|-|
-| 1 | - | - |
-|
+| DOAÇÕES | Não foi possível concluir sua transferência. | Negado pela análise de risco. (Significa que o pedido tem algum dado em BLACKLIST, pedido em situação irreversível.) |
+| RECARGA DE CELULAR | Não foi possível concluir o seu resgate. | Rejeitado por infringir uma ou mais regra de rejeição global. (Significa que foi negado por alguma regra de bloqueio, por exemplo, valor ou quantidade. Sujeito a reversão ou liberação do pedido.) |
+| E-COMMERCE | Não foi possível concluir a sua compra. | Pedido em análise de externa. (Pedido esta em analise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) |
+| SHOPPING | Não foi possível concluir a sua compra. | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido).
 
 ### * Tabela Sub Erros - Código 330
 
 | Código | Mensagem Exemplo | Descrição |
 |-|-|-|
 | 1 | - | - |
-|
 
 ### * Tabela Sub Erros - Código 331
 
 | Código | Mensagem Exemplo | Descrição |
 |-|-|-|
 | 1 | - | - |
-|
 
 ### * Tabela Sub Erros - Código 332
 
 | Código | Mensagem Exemplo | Descrição |
 |-|-|-|
 | 1 | - | - |
-|
 
 ### * Tabela Sub Erros - Código 333
 
 | Código | Mensagem Exemplo | Descrição |
 |-|-|-|
 | 1 | - | - |
-|
 
 ### * Tabela Sub Erros - Código 334
 
 | Código | Mensagem Exemplo | Descrição |
 |-|-|-|
 | 1 | - | - |
-|
 
 ## Dicas de Uso
 
