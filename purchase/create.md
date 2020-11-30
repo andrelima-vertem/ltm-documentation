@@ -86,13 +86,6 @@ Recurso utilizado para criar uma nova compra.
 | 1 | 4785d50b21c64707adc3 | SKU do produto adicionado não permitido |
 | 2 | Pontos/Cash | Tipo do contexto inválido(ponto ou dinheiro). |
 
-### * Tabela SubMensagem - Código 318
-
-| Sub Mensagem |
-|-|
-|Existem produtos que não possuem estoque disponível. Verifique produtos similares, pois temos muitas opções.|
-
-
 ### * Tabela Sub Erros - Código 317
 
 | Código | Mensagem Exemplo | Descrição |
@@ -100,7 +93,18 @@ Recurso utilizado para criar uma nova compra.
 | -1 | Cep não disponível para a região | Erros no cálculo de frete, caráter informativo apenas, Erro genérico do parceiro. |
 | -1 | Quantidade de itens excedeu o limite permitido | Erros no cálculo de frete, caráter informativo apenas, Erro genérico do parceiro. |
 
+### * Tabela SubMensagem - Código 318
 
+| Sub Mensagem |
+|-|
+|Existem produtos que não possuem estoque disponível. Verifique produtos similares, pois temos muitas opções.|
+
+**Quando houver 1 ou mais produtos indisponíveis, esses serão listados dentro da lista SUB.**
+**OBS.: O Valor do código para produtos indisponíveis será sempre 318**
+| Código | SKU | Descrição |
+|-|-|-|
+| 318 | 16d80bafbecd4f8db9f0 | SKU do Produto **indisponível** |
+| 0 | 1580kf78cd4nm8129g1 | SKU do Produto disponível |
 
 ### * Tabela Sub Inconsistências - Código 322
 
