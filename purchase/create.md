@@ -55,6 +55,7 @@ Recurso utilizado para criar uma nova compra.
 | 338 | Problemas com o Cartão de Crédito |**Sim\*** |Não| Problemas com o Cartão de Crédito (#70) | 422 |
 | 339 | Este cartão está bloqueado |**Sim\*** |Não|  Cartão de crédito - Cartão Bloqueado. | 422 |
 | 340 | Este cartão está expirado Erro no pagamento |**Sim\*** |Não|  Cartão de crédito - Cartão Expirado.| 422 |
+| 342 | Quantidade limitada por participante |**Sim\*** | **Sim\*** |  Participante excedeu quantidade permitida no periodo | 422 |
 
 
 ### * Tabela Sub Erros - Código 289
@@ -100,7 +101,7 @@ Recurso utilizado para criar uma nova compra.
 |Existem produtos que não possuem estoque disponível. Verifique produtos similares, pois temos muitas opções.|
 
 **Quando houver 1 ou mais produtos indisponíveis, esses serão listados dentro da lista SUB.**
-**OBS.: O Valor do código para produtos indisponíveis será sempre 318**
+**OBS.: O código 318 será retornado sempre que houver um produto indisponível**
 | Código | SKU | Descrição |
 |-|-|-|
 | 318 | 16d80bafbecd4f8db9f0 | SKU do Produto **indisponível** |
@@ -232,12 +233,6 @@ Recurso utilizado para criar uma nova compra.
 | MILHAS |  Você não tem pontos suficientes para fazer essa transferência. | Saldo Insuficiente / Nâo tem saldo
 | E-COMMERCE | - | - |
 
-### * Tabela SubMensagem - Código 326
-
-| Sub Mensagem |
-|-|
-|Tente novamente mais tarde ou entre em contato com a Central.|
-
 ### * Tabela SubMensagem - Código 335
 
 | Sub Mensagem |
@@ -273,6 +268,19 @@ Recurso utilizado para criar uma nova compra.
 | Sub Mensagem |
 |-|
 |Tente com outro cartão. |
+
+### * Tabela SubMensagem - Código 342
+
+| Sub Mensagem |
+|-|
+|Este produto tem a quantidade limitada para resgate por participante. Seu limite já foi atingido.|
+
+**OBS.: O código 342 será retornado sempre que houver um produto indisponível**
+
+| Código | Mensagem Exemplo | Descrição |
+|-|-|-|
+| 6 | Quantidade informada excede o limite de resgates. | Retorno da regra de validação |
+| 342 | D29B9614-945A-4E30-32A3-08D7574F815C | SKU do produto indisponível |
 
 ## Dicas de Uso
 
