@@ -94,7 +94,7 @@ Recurso utilizado para criar uma nova compra.
 | -1 | Cep não disponível para a região | Erros no cálculo de frete, caráter informativo apenas, Erro genérico do parceiro. |
 | -1 | Quantidade de itens excedeu o limite permitido | Erros no cálculo de frete, caráter informativo apenas, Erro genérico do parceiro. |
 
-### * Tabela SubMensagem - Código 318
+### * Tabela Sub Mensagem - Código 318
 
 | Sub Mensagem |
 |-|
@@ -167,7 +167,7 @@ Recurso utilizado para criar uma nova compra.
 | E-COMMERCE | Não foi possível concluir sua compra. | Pedido em análise de externa. (Pedido esta em analise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) |
 | SHOPPING | Não foi possível concluir sua compra. | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido).
 
-### * Tabela SubMensagem - Código 326
+### * Tabela Sub Mensagem e Type - Código 326
 
 | Sub Mensagem |
 |-|
@@ -180,7 +180,7 @@ Recurso utilizado para criar uma nova compra.
 | E-COMMERCE | Não foi possível concluir sua compra. | Pedido em análise de externa. (Pedido esta em analise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) |
 | SHOPPING | Não foi possível concluir sua compra. | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido). |
 
-### * Tabela SubMensagem - Código 327
+### * Tabela Sub Mensagem e Type- Código 327
 
 | Sub Mensagem |
 |-|
@@ -193,7 +193,7 @@ Recurso utilizado para criar uma nova compra.
 | E-COMMERCE | Não foi possível concluir sua compra. | Pedido em análise de externa. (Pedido esta em analise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) |
 | SHOPPING | Não foi possível concluir sua compra. | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido).
 
-### * Tabela SubMensagem - Código 328
+### * Tabela Sub Mensagem e Type - Código 328
 
 | Sub Mensagem |
 |-|
@@ -206,7 +206,7 @@ Recurso utilizado para criar uma nova compra.
 | E-COMMERCE | Não foi possível concluir sua compra. | Pedido em análise de externa. (Pedido esta em analise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) |
 | SHOPPING | Não foi possível concluir sua compra. | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido).
 
-### * Tabela SubMensagem - Código 329
+### * Tabela Sub Mensagem e Type - Código 329
 
 | Sub Mensagem |
 |-|
@@ -219,12 +219,12 @@ Recurso utilizado para criar uma nova compra.
 | E-COMMERCE | Não foi possível concluir sua compra. | Pedido em análise de externa. (Pedido esta em analise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) |
 | SHOPPING | Não foi possível concluir sua compra. | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido).
 
-### * Tabela Sub Erros - Código 332
+### * Tabela Sub Erros e Type - Código 332
 
 | Sub Mensagem* |
 |-|
 |Verifique o seu saldo de pontos e ajuste o valor desejado.|
-***Não haverá Sub Mensagem para E-Commerce**
+**Não haverá Sub Mensagem para E-Commerce**
 
 | Type (Tipo de Fechamento) | Mensagem Exemplo | Descrição |
 |-|-|-|
@@ -233,43 +233,43 @@ Recurso utilizado para criar uma nova compra.
 | MILHAS |  Você não tem pontos suficientes para fazer essa transferência. | Saldo Insuficiente / Nâo tem saldo
 | E-COMMERCE | - | - |
 
-### * Tabela SubMensagem - Código 335
+### * Tabela Sub Mensagem - Código 335
 
 | Sub Mensagem |
 |-|
 |Verifique os dados do cartão ou tente com outro cartão.|
 
-### * Tabela SubMensagem - Código 336
+### * Tabela Sub Mensagem - Código 336
 
 | Sub Mensagem |
 |-|
 |Recarregue a página e tente novamente.|
 
-### * Tabela SubMensagem - Código 337
+### * Tabela Sub Mensagem - Código 337
 
 | Sub Mensagem |
 |-|
 |Tente com outro cartão.|
 
-### * Tabela SubMensagem - Código 338
+### * Tabela Sub Mensagem - Código 338
 
 | Sub Mensagem |
 |-|
 |Verifique os dados do cartão ou tente com outro cartão.|
 
-### * Tabela SubMensagem - Código 339
+### * Tabela Sub Mensagem - Código 339
 
 | Sub Mensagem |
 |-|
 |Tente com outro cartão.|
 
-### * Tabela SubMensagem - Código 340
+### * Tabela Sub Mensagem - Código 340
 
 | Sub Mensagem |
 |-|
 |Tente com outro cartão. |
 
-### * Tabela SubMensagem - Código 342
+### * Tabela Sub Mensagem e Type - Código 342
 
 | Sub Mensagem |
 |-|
