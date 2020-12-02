@@ -55,6 +55,7 @@ Recurso utilizado para criar uma nova compra.
 | 338 | Problemas com o Cartão de Crédito |**Sim\*** |Não| Problemas com o Cartão de Crédito (#70) | 422 |
 | 339 | Este cartão está bloqueado |**Sim\*** |Não|  Cartão de crédito - Cartão Bloqueado. | 422 |
 | 340 | Este cartão está expirado Erro no pagamento |**Sim\*** |Não|  Cartão de crédito - Cartão Expirado.| 422 |
+| 342 | Quantidade limitada por participante |**Sim\*** | **Sim\*** |  Participante excedeu quantidade permitida no periodo | 422 |
 
 
 ### * Tabela Sub Erros - Código 289
@@ -86,13 +87,6 @@ Recurso utilizado para criar uma nova compra.
 | 1 | 4785d50b21c64707adc3 | SKU do produto adicionado não permitido |
 | 2 | Pontos/Cash | Tipo do contexto inválido(ponto ou dinheiro). |
 
-### * Tabela SubMensagem - Código 318
-
-| Sub Mensagem |
-|-|
-|Existem produtos que não possuem estoque disponível. Verifique produtos similares, pois temos muitas opções.|
-
-
 ### * Tabela Sub Erros - Código 317
 
 | Código | Mensagem Exemplo | Descrição |
@@ -100,7 +94,18 @@ Recurso utilizado para criar uma nova compra.
 | -1 | Cep não disponível para a região | Erros no cálculo de frete, caráter informativo apenas, Erro genérico do parceiro. |
 | -1 | Quantidade de itens excedeu o limite permitido | Erros no cálculo de frete, caráter informativo apenas, Erro genérico do parceiro. |
 
+### * Tabela Sub Mensagem - Código 318
 
+| Sub Mensagem |
+|-|
+|Existem produtos que não possuem estoque disponível. Verifique produtos similares, pois temos muitas opções.|
+
+**Quando houver 1 ou mais produtos indisponíveis, esses serão listados dentro da lista SUB.**
+**OBS.: O código 318 será retornado sempre que houver um produto indisponível**
+| Código | SKU | Descrição |
+|-|-|-|
+| 318 | 16d80bafbecd4f8db9f0 | SKU do Produto **indisponível** |
+| 0 | 1580kf78cd4nm8129g1 | SKU do Produto disponível |
 
 ### * Tabela Sub Inconsistências - Código 322
 
@@ -162,7 +167,7 @@ Recurso utilizado para criar uma nova compra.
 | E-COMMERCE | Não foi possível concluir sua compra. | Pedido em análise de externa. (Pedido esta em analise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) |
 | SHOPPING | Não foi possível concluir sua compra. | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido).
 
-### * Tabela SubMensagem - Código 326
+### * Tabela Sub Mensagem e Type - Código 326
 
 | Sub Mensagem |
 |-|
@@ -175,7 +180,7 @@ Recurso utilizado para criar uma nova compra.
 | E-COMMERCE | Não foi possível concluir sua compra. | Pedido em análise de externa. (Pedido esta em analise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) |
 | SHOPPING | Não foi possível concluir sua compra. | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido). |
 
-### * Tabela SubMensagem - Código 327
+### * Tabela Sub Mensagem e Type- Código 327
 
 | Sub Mensagem |
 |-|
@@ -188,7 +193,7 @@ Recurso utilizado para criar uma nova compra.
 | E-COMMERCE | Não foi possível concluir sua compra. | Pedido em análise de externa. (Pedido esta em analise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) |
 | SHOPPING | Não foi possível concluir sua compra. | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido).
 
-### * Tabela SubMensagem - Código 328
+### * Tabela Sub Mensagem e Type - Código 328
 
 | Sub Mensagem |
 |-|
@@ -201,7 +206,7 @@ Recurso utilizado para criar uma nova compra.
 | E-COMMERCE | Não foi possível concluir sua compra. | Pedido em análise de externa. (Pedido esta em analise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) |
 | SHOPPING | Não foi possível concluir sua compra. | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido).
 
-### * Tabela SubMensagem - Código 329
+### * Tabela Sub Mensagem e Type - Código 329
 
 | Sub Mensagem |
 |-|
@@ -214,12 +219,12 @@ Recurso utilizado para criar uma nova compra.
 | E-COMMERCE | Não foi possível concluir sua compra. | Pedido em análise de externa. (Pedido esta em analise, essa mensagem não funciona hoje, por que não temos resgate offline no sonar ainda.) |
 | SHOPPING | Não foi possível concluir sua compra. | Pedido rejeitado por análise externa. (Negado por analise externa, ou seja, fora do ambiente sonar, por exemplo a ClearSale não aprovou o pedido por causa dos dados de cartão de credito por exemplo. Sujeito a reversão ou liberação do pedido).
 
-### * Tabela Sub Erros - Código 332
+### * Tabela Sub Erros e Type - Código 332
 
 | Sub Mensagem* |
 |-|
 |Verifique o seu saldo de pontos e ajuste o valor desejado.|
-***Não haverá Sub Mensagem para E-Commerce**
+**Não haverá Sub Mensagem para E-Commerce**
 
 | Type (Tipo de Fechamento) | Mensagem Exemplo | Descrição |
 |-|-|-|
@@ -228,47 +233,54 @@ Recurso utilizado para criar uma nova compra.
 | MILHAS |  Você não tem pontos suficientes para fazer essa transferência. | Saldo Insuficiente / Nâo tem saldo
 | E-COMMERCE | - | - |
 
-### * Tabela SubMensagem - Código 326
-
-| Sub Mensagem |
-|-|
-|Tente novamente mais tarde ou entre em contato com a Central.|
-
-### * Tabela SubMensagem - Código 335
+### * Tabela Sub Mensagem - Código 335
 
 | Sub Mensagem |
 |-|
 |Verifique os dados do cartão ou tente com outro cartão.|
 
-### * Tabela SubMensagem - Código 336
+### * Tabela Sub Mensagem - Código 336
 
 | Sub Mensagem |
 |-|
 |Recarregue a página e tente novamente.|
 
-### * Tabela SubMensagem - Código 337
+### * Tabela Sub Mensagem - Código 337
 
 | Sub Mensagem |
 |-|
 |Tente com outro cartão.|
 
-### * Tabela SubMensagem - Código 338
+### * Tabela Sub Mensagem - Código 338
 
 | Sub Mensagem |
 |-|
 |Verifique os dados do cartão ou tente com outro cartão.|
 
-### * Tabela SubMensagem - Código 339
+### * Tabela Sub Mensagem - Código 339
 
 | Sub Mensagem |
 |-|
 |Tente com outro cartão.|
 
-### * Tabela SubMensagem - Código 340
+### * Tabela Sub Mensagem - Código 340
 
 | Sub Mensagem |
 |-|
 |Tente com outro cartão. |
+
+### * Tabela Sub Mensagem e Type - Código 342
+
+| Sub Mensagem |
+|-|
+|Este produto tem a quantidade limitada para resgate por participante. Seu limite já foi atingido.|
+
+**OBS.: O código 342 será retornado sempre que houver um produto indisponível**
+
+| Código | Mensagem Exemplo | Descrição |
+|-|-|-|
+| 6 | Quantidade informada excede o limite de resgates. | Retorno da regra de validação |
+| 342 | D29B9614-945A-4E30-32A3-08D7574F815C | SKU do produto indisponível |
 
 ## Dicas de Uso
 
