@@ -31,7 +31,7 @@ Recurso utilizado para criar uma nova compra.
 | 314 | Uma tentativa de resgate sem informar o Canal foi efetuada. |Não| Não | Erro ao executar um resgate, motivo: o canal não foi informado ou está incorreto. | 422 |
 | 315 | Uma tentativa de resgate foi efetuada, erros na validação de regras do carrinho. |Não| Não | Erro ao executar um resgate, motivo: há regras  do carrinho que não foram atendidadas. Para maiores informações, consulte **código 289**.  | 422 |
 | 316 | O produto selecionado não é permitido para compras com o contexto informado. |Não| **Sim\*** | Erro ao executar um resgate em um contexto somente pontos ou somente dinheiro. __Consulte a regra "Somente Cash" / "Somente Pontos"__ Este erro ocorre pois um carrinho está inválido para o resgate. Neste caso é informado o contexto e o(s) skus envolvidos. | 422 |
-| 317 | Uma tentativa de resgate foi efetuada, porém erros no cálculo de frete impediram a conclusão. |-| **Sim** | Erro ao executar um resgate, motivo: incoerência no cálculo de frete. | 422 |
+| 317 | Tentativa de resgate foi efetuada, porém erros no cálculo de frete impediram a conclusão. |**Sim\***| **Sim\*** | Uma tentativa de resgate foi efetuada, porém erros no cálculo de frete impediram a conclusão. | 422 |
 | 318 | Uma tentativa de resgate foi efetuada, porém há divergência(s) no(s) item(s) - preço / estoque. |**Sim\***| Não | Erro ao executar um resgate, motivo: preço divergente ou item sem estoque.  | 422 |
 | 319 | Uma tentativa de resgate foi efetuada, porém PointsValue é inválido. |Não| Não | Erro ao executar um resgate, motivo: quantidade insulficiente de Pontos | 422 |
 | 320 | Uma tentativa de resgate foi efetuada, problemas com pontos e dinheiro (cash). |Não| Não | Erro com o valor dos pontos. | 422 |
@@ -93,6 +93,7 @@ Recurso utilizado para criar uma nova compra.
 |-|-|-|
 | -1 | Cep não disponível para a região | Erros no cálculo de frete, caráter informativo apenas, Erro genérico do parceiro. |
 | -1 | Quantidade de itens excedeu o limite permitido | Erros no cálculo de frete, caráter informativo apenas, Erro genérico do parceiro. |
+| 317 |[\"3de7e58205c94d1a9936\"] | Trata-se de uma matriz deserialidada (JSON) com os códigos dos skus envolvidos para cada parceiro. Atenção este código pode vir em duplicidade na resposta. |
 
 ### * Tabela Sub Mensagem - Código 318
 
@@ -233,6 +234,13 @@ Recurso utilizado para criar uma nova compra.
 | MILHAS |  Você não tem pontos suficientes para fazer essa transferência. | Saldo Insuficiente / Nâo tem saldo
 | E-COMMERCE | - | - |
 
+
+
+### * Tabela Sub Mensagem - Código 317
+
+| Sub Mensagem |
+|-|
+|O produto não está disponível para o CEP informado ou não possui estoque disponível.|
 ### * Tabela Sub Mensagem - Código 335
 
 | Sub Mensagem |

@@ -10,14 +10,14 @@ Recurso utilizado para calcular o frete do carrinho baseado em um CEP (Token de 
 
 ## Dicionário de Erros
 
-| Código | Mensagem | Sub | Descrição | Http Status |
-|-|-|-|-|-|
-| 70 | Infelizmente não podemos entregar os produtos destes parceiros no mesmo pedido, mas você pode fazer um novo pedido para cada um dos parceiros. |  **\*Sim** | Ocorre quando não foi possível calcular o frete de um carrinho. Lembrando que um carrinho pode haver mais de um parceiro. Sendo assim, no retorno é apresentado o detalhe do parceiro que ocorreu o erro. Atenção: o parâmetro sub pode contar tipos duplicados duplicados, em caso de carrinho com mais de um parceiro isso é possível. | 422 |
-| 77 | Problemas internos: O carrinho está vazio. | Não | Por algum motivo o carrinho se encontra vazio no momento da validação dos dados. Deve-se incluir um produto no carrinho e caso o erro persista, reportar como um item crítico. | 422 |
-| 103 | Não é possível realizar esta operação. (Tipo de token inválido.) | Não | Verifique se o access_token informado foi gerado corretamente ou se possui permissões para executar a operação. | 401 |
-| **131** | Não conseguimos calcular o frete. Seu CEP pode estar digitado errado ou nosso parceiro não atende à sua região. | Não | Trata-se de um dos erros mais comuns no cálculo de frete. Ocorre quando um parceiro não entrega o produto em uma determinada região ou se o produto não consta mais no estoque do parceiro. *Importante.* | **404** |
-| 271 | Produto(s) não encontrado(s)! | Não | Os dados informados sobre o produto não são válidos, verifique o código do sku / produto. | 422 |
-| 290 | Erro externo ao calcular o frete | **\*Sim** | Não foi possível calcular o frete. | 422 |
+| Código | Mensagem |Sub Mensagem| Sub | Descrição | Http Status |
+|-|-|-|-|-|-|
+| 70 | Infelizmente não podemos entregar os produtos destes parceiros no mesmo pedido, mas você pode fazer um novo pedido para cada um dos parceiros. | Não |  **\*Sim** | Ocorre quando não foi possível calcular o frete de um carrinho. Lembrando que um carrinho pode haver mais de um parceiro. Sendo assim, no retorno é apresentado o detalhe do parceiro que ocorreu o erro. Atenção: o parâmetro sub pode contar tipos duplicados duplicados, em caso de carrinho com mais de um parceiro isso é possível. | 422 |
+| 77 | Problemas internos: O carrinho está vazio. | Não | Não | Por algum motivo o carrinho se encontra vazio no momento da validação dos dados. Deve-se incluir um produto no carrinho e caso o erro persista, reportar como um item crítico. | 422 |
+| 103 | Não é possível realizar esta operação. (Tipo de token inválido.) | Não | Não | Verifique se o access_token informado foi gerado corretamente ou se possui permissões para executar a operação. | 401 |
+| **131** | Não conseguimos calcular o frete. Seu CEP pode estar digitado errado ou nosso parceiro não atende à sua região. | Não | Não | Trata-se de um dos erros mais comuns no cálculo de frete. Ocorre quando um parceiro não entrega o produto em uma determinada região ou se o produto não consta mais no estoque do parceiro. *Importante.* | **404** |
+| 271 | Produto(s) não encontrado(s)! | Não | Não | Os dados informados sobre o produto não são válidos, verifique o código do sku / produto. | 422 |
+| 290 | Erro externo ao calcular o frete | **\*Sim** | **\*Sim** | Não foi possível calcular o frete. | 422 |
 
 ### * Tabela Sub Erros - Código 70
 
@@ -35,6 +35,11 @@ Recurso utilizado para calcular o frete do carrinho baseado em um CEP (Token de 
 | -1, -1, ... | Produto não disponível, Magazine Luiza, ... | Apresenta uma cadeia de informações alphanuméricas que ou devem ser apresentadas ou para fins de logs na aplicação cliente. O CloudLoyalty sempre vai apresentar o nome do parceiro que apresentou a mensagem em uma das cadeias. |
 | 290 |[\"3de7e58205c94d1a9936\"] | Trata-se de uma matriz deserialidada (JSON) com os códigos dos skus envolvidos para cada parceiro. Atenção este código pode vir em duplicidade na resposta. |
 
+### * Tabela Sub Mensagem - Código 290
+
+| Sub Mensagem |
+|-|
+|O produto não está disponível para o CEP informado ou não possui estoque disponível.|
 ## Dicas de Uso
 
 > Correlation Id: Utilize o parâmetro "X-Correlation-Id" para gerar uma correlação nos seus fluxos de sistema utilizando o CloudLoyalty.
